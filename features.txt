@@ -273,10 +273,10 @@ Intuitive expression interpolation for single-line and multi-line strings.
 5| "a total of "| + (card.amount * card.unitprice) + |" bucks?|"|;
 
 
-Enhanced Object Properties
+Enhanced Object Properties (增强对象属性)
 ==========================
 
-Property Shorthand
+Property Shorthand (属性缩写)
 ------------------
 
 Shorter syntax for common object property definition idiom.
@@ -285,7 +285,7 @@ Shorter syntax for common object property definition idiom.
 
 5| obj = { |x: x|, |y: y| };
 
-Computed Property Names
+Computed Property Names (计算属性名)
 -----------------------
 
 Support for computed names in object property definitions.
@@ -300,7 +300,7 @@ Support for computed names in object property definitions.
 5| };
 5| |obj[| "baz" + quux() |] =| 42;
 
-Method Properties
+Method Properties (方法)
 -----------------
 
 Support for method notation in object property definitions,
@@ -330,7 +330,7 @@ for both regular functions and generator functions.
 5| };
 
 
-Destructuring Assignment
+Destructuring Assignment (解构赋值)
 ========================
 
 Array Matching

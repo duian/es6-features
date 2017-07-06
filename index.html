@@ -106,37 +106,19 @@
     <ul>
 <li class="subtitle subtitle_StringInterpolation">
     <a href="#StringInterpolation">String Interpolation (字符串变量)</a> <i class="fa fa-arrow-circle-right"></i></li>
-<li class="subtitle subtitle_CustomInterpolation">
-    <a href="#CustomInterpolation">Custom Interpolation</a> <i class="fa fa-arrow-circle-right"></i></li>
-<li class="subtitle subtitle_RawStringAccess">
-    <a href="#RawStringAccess">Raw String Access</a> <i class="fa fa-arrow-circle-right"></i></li>
     </ul>
 </li>
-<li class="title">Extended Literals
-    <ul>
-<li class="subtitle subtitle_BinaryOctalLiteral">
-    <a href="#BinaryOctalLiteral">Binary & Octal Literal</a> <i class="fa fa-arrow-circle-right"></i></li>
-<li class="subtitle subtitle_UnicodeStringRegExpLiteral">
-    <a href="#UnicodeStringRegExpLiteral">Unicode String & RegExp Literal</a> <i class="fa fa-arrow-circle-right"></i></li>
-    </ul>
-</li>
-<li class="title">Enhanced Regular Expression
-    <ul>
-<li class="subtitle subtitle_RegularExpressionStickyMatching">
-    <a href="#RegularExpressionStickyMatching">Regular Expression Sticky Matching</a> <i class="fa fa-arrow-circle-right"></i></li>
-    </ul>
-</li>
-<li class="title">Enhanced Object Properties
+<li class="title">Enhanced Object Properties (增强对象属性)
     <ul>
 <li class="subtitle subtitle_PropertyShorthand">
-    <a href="#PropertyShorthand">Property Shorthand</a> <i class="fa fa-arrow-circle-right"></i></li>
+    <a href="#PropertyShorthand">Property Shorthand (属性缩写)</a> <i class="fa fa-arrow-circle-right"></i></li>
 <li class="subtitle subtitle_ComputedPropertyNames">
-    <a href="#ComputedPropertyNames">Computed Property Names</a> <i class="fa fa-arrow-circle-right"></i></li>
+    <a href="#ComputedPropertyNames">Computed Property Names (计算属性名)</a> <i class="fa fa-arrow-circle-right"></i></li>
 <li class="subtitle subtitle_MethodProperties">
-    <a href="#MethodProperties">Method Properties</a> <i class="fa fa-arrow-circle-right"></i></li>
+    <a href="#MethodProperties">Method Properties (方法)</a> <i class="fa fa-arrow-circle-right"></i></li>
     </ul>
 </li>
-<li class="title">Destructuring Assignment
+<li class="title">Destructuring Assignment (解构赋值)
     <ul>
 <li class="subtitle subtitle_ArrayMatching">
     <a href="#ArrayMatching">Array Matching</a> <i class="fa fa-arrow-circle-right"></i></li>
@@ -587,159 +569,8 @@ a total <span class="keyword">of</span> <span class="mark">$<span class="punctua
     <i class="icon fa fa-times-circle"></i>
 </div>
 </div>
-<div id="CustomInterpolation" class="showcase showcase_CustomInterpolation">    <div class="title">Template Literals (模版字面量)</div>
-    <div class="subtitle">Custom Interpolation</div>
-    <div class="desc">Flexible expression interpolation for arbitrary methods.</div>
-<div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code">get<span class="mark"><span class="literal">`</span>http://example<span class="punctuation">.</span>com/foo?bar=<span class="mark">$<span class="punctuation">{</span></span>bar <span class="punctuation">+</span> baz<span class="mark"><span class="punctuation">}</span></span><span class="punctuation"><span class="punctuation">&amp;</span></span>quux=<span class="mark">$<span class="punctuation">{</span></span>quux<span class="mark"><span class="punctuation">}</span>`</span></span><span class="semi">;</span>
-</div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-check-circle"></i>
-</div>
-    <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code">get<span class="mark"><span class="punctuation">(</span><span class="punctuation">[</span> </span><span class="literal">"http://example<span class="punctuation">.</span>com/foo?bar="</span><span class="mark"><span class="punctuation">,</span></span> <span class="literal">"<span class="punctuation"><span class="punctuation">&amp;</span></span>quux="</span><span class="mark"><span class="punctuation">,</span></span> <span class="literal">""</span><span class="mark"> <span class="punctuation">]</span><span class="punctuation">,</span></span>bar <span class="punctuation">+</span> baz<span class="mark"><span class="punctuation">,</span></span> quux<span class="mark"><span class="punctuation">)</span></span><span class="semi">;</span></div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-times-circle"></i>
-</div>
-</div>
-<div id="RawStringAccess" class="showcase showcase_RawStringAccess">    <div class="title">Template Literals (模版字面量)</div>
-    <div class="subtitle">Raw String Access</div>
-    <div class="desc">Access the raw template string content (backslashes are not interpreted).</div>
-<div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code"><span class="keyword">function</span> quux <span class="punctuation">(</span>strings<span class="punctuation">,</span> <span class="punctuation">.</span><span class="punctuation">.</span><span class="punctuation">.</span>values<span class="punctuation">)</span> <span class="punctuation">{</span>
-    strings<span class="punctuation">[</span><span class="literal">0</span><span class="punctuation">]</span> <span class="punctuation">===</span> <span class="literal">"<span class="mark">foo\n</span>"</span><span class="semi">;</span>
-    strings<span class="punctuation">[</span><span class="literal">1</span><span class="punctuation">]</span> <span class="punctuation">===</span> <span class="literal">"bar"</span><span class="semi">;</span>
-    strings<span class="mark"><span class="punctuation">.</span>raw</span><span class="punctuation">[</span><span class="literal">0</span><span class="punctuation">]</span> <span class="punctuation">===</span> <span class="literal">"<span class="mark">foo\\n</span>"</span><span class="semi">;</span>
-    strings<span class="punctuation">.</span>raw<span class="punctuation">[</span><span class="literal">1</span><span class="punctuation">]</span> <span class="punctuation">===</span> <span class="literal">"bar"</span><span class="semi">;</span>
-    values<span class="punctuation">[</span><span class="literal">0</span><span class="punctuation">]</span> <span class="punctuation">===</span> <span class="literal">42</span><span class="semi">;</span>
-<span class="punctuation">}</span>
-quux <span class="mark"><span class="literal">`</span>foo<span class="mark">\n</span>$<span class="punctuation">{</span> 42 <span class="punctuation">}</span>bar<span class="mark">`</span></span>
-
-String<span class="punctuation">.</span>raw <span class="mark"><span class="literal">`</span>foo<span class="mark">\n</span>$<span class="punctuation">{</span> 42 <span class="punctuation">}</span>bar<span class="mark">`</span></span> <span class="punctuation">===</span> <span class="literal">"foo<span class="mark">\\n</span>42bar"</span><span class="semi">;</span>
-</div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-check-circle"></i>
-</div>
-    <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code"><span class="comment">//  no equivalent <span class="keyword">in</span> ES<span class="literal">5</span></span></div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-times-circle"></i>
-</div>
-</div>
-<div id="BinaryOctalLiteral" class="showcase showcase_BinaryOctalLiteral">    <div class="title">Extended Literals</div>
-    <div class="subtitle">Binary & Octal Literal</div>
-    <div class="desc">Direct support for safe binary and octal literals.</div>
-<div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code"><span class="mark"><span class="literal">0</span>b</span><span class="literal">111110111</span> <span class="punctuation">===</span> <span class="literal">503</span><span class="semi">;</span>
-<span class="mark"><span class="literal">0</span>o</span><span class="literal">767</span> <span class="punctuation">===</span> <span class="literal">503</span><span class="semi">;</span>
-</div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-check-circle"></i>
-</div>
-    <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code"><span class="mark">parseInt<span class="punctuation">(</span></span><span class="literal">"111110111"</span><span class="mark"><span class="punctuation">,</span> <span class="literal">2</span><span class="punctuation">)</span></span> <span class="punctuation">===</span> <span class="literal">503</span><span class="semi">;</span>
-<span class="mark">parseInt<span class="punctuation">(</span></span><span class="literal">"767"</span><span class="mark"><span class="punctuation">,</span> <span class="literal">8</span><span class="punctuation">)</span></span> <span class="punctuation">===</span> <span class="literal">503</span><span class="semi">;</span>
-<span class="mark"><span class="literal">0</span></span><span class="literal">767</span> <span class="punctuation">===</span> <span class="literal">503</span><span class="semi">;</span><span class="comment"> // only <span class="keyword">in</span> non<span class="punctuation">-</span>strict<span class="punctuation">,</span> backward compatibility mode</span></div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-times-circle"></i>
-</div>
-</div>
-<div id="UnicodeStringRegExpLiteral" class="showcase showcase_UnicodeStringRegExpLiteral">    <div class="title">Extended Literals</div>
-    <div class="subtitle">Unicode String & RegExp Literal</div>
-    <div class="desc">Extended support using Unicode within strings and regular expressions.</div>
-<div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code"><span class="literal">"𠮷"</span><span class="punctuation">.</span>length <span class="punctuation">===</span> <span class="literal">2</span><span class="semi">;</span>
-<span class="literal">"𠮷"</span><span class="punctuation">.</span>match<span class="punctuation">(</span>/<span class="punctuation">.</span>/<span class="mark">u</span><span class="punctuation">)</span><span class="punctuation">[</span><span class="literal">0</span><span class="punctuation">]</span><span class="punctuation">.</span>length <span class="punctuation">===</span> <span class="literal">2</span><span class="semi">;</span>
-<span class="literal">"𠮷"</span> <span class="punctuation">===</span> <span class="literal">"\uD842\uDFB7"</span><span class="semi">;</span>
-<span class="literal">"𠮷"</span> <span class="punctuation">===</span> <span class="literal">"<span class="mark">\u<span class="punctuation">{</span>20BB7<span class="punctuation">}</span></span>"</span><span class="semi">;</span>
-<span class="literal">"𠮷"</span><span class="punctuation">.</span><span class="mark">codePointAt</span><span class="punctuation">(</span><span class="literal">0</span><span class="punctuation">)</span> == <span class="literal">0</span>x<span class="literal">20</span>BB<span class="literal">7</span><span class="semi">;</span>
-<span class="keyword">for</span> <span class="punctuation">(</span><span class="keyword">let</span> codepoint <span class="mark"><span class="keyword">of</span></span> <span class="literal">"𠮷"</span><span class="punctuation">)</span> console<span class="punctuation">.</span>log<span class="punctuation">(</span>codepoint<span class="punctuation">)</span><span class="semi">;</span>
-</div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-check-circle"></i>
-</div>
-    <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code"><span class="literal">"𠮷"</span><span class="punctuation">.</span>length <span class="punctuation">===</span> <span class="literal">2</span><span class="semi">;</span>
-<span class="literal">"𠮷"</span><span class="punctuation">.</span>match<span class="punctuation">(</span>/<span class="punctuation">(</span>?:<span class="punctuation">[</span>\<span class="literal">0</span><span class="punctuation">-</span>\t\x<span class="literal">0</span>B\f\x<span class="literal">0</span>E<span class="punctuation">-</span>\u<span class="literal">2027</span>\u<span class="literal">202</span>A<span class="punctuation">-</span>\uD<span class="literal">7</span>FF\uE<span class="literal">000</span><span class="punctuation">-</span>\uFFFF<span class="punctuation">]</span><span class="mark"><span class="punctuation">[</span>\uD<span class="literal">800</span><span class="punctuation">-</span>\uDBFF<span class="punctuation">]</span><span class="punctuation">[</span>\uDC<span class="literal">00</span><span class="punctuation">-</span>\uDFFF<span class="punctuation">]</span></span><span class="punctuation">[</span>\uD<span class="literal">800</span><span class="punctuation">-</span>\uDBFF<span class="punctuation">]</span><span class="punctuation">(</span>?!<span class="punctuation">[</span>\uDC<span class="literal">00</span><span class="punctuation">-</span>\uDFFF<span class="punctuation">]</span><span class="punctuation">)</span><span class="mark"><span class="punctuation">(</span>?:<span class="punctuation">[</span>^\uD<span class="literal">800</span><span class="punctuation">-</span>\uDBFF<span class="punctuation">]</span></span>^<span class="punctuation">)</span><span class="punctuation">[</span>\uDC<span class="literal">00</span><span class="punctuation">-</span>\uDFFF<span class="punctuation">]</span><span class="punctuation">)</span>/<span class="punctuation">)</span><span class="punctuation">[</span><span class="literal">0</span><span class="punctuation">]</span><span class="punctuation">.</span>length <span class="punctuation">===</span> <span class="literal">2</span><span class="semi">;</span>
-<span class="literal">"𠮷"</span> <span class="punctuation">===</span> <span class="literal">"\uD842\uDFB7"</span><span class="semi">;</span><span class="comment">
-//  no equivalent <span class="keyword">in</span> ES<span class="literal">5</span></span><span class="comment">
-//  no equivalent <span class="keyword">in</span> ES<span class="literal">5</span></span><span class="comment">
-//  no equivalent <span class="keyword">in</span> ES<span class="literal">5</span></span></div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-times-circle"></i>
-</div>
-</div>
-<div id="RegularExpressionStickyMatching" class="showcase showcase_RegularExpressionStickyMatching">    <div class="title">Enhanced Regular Expression</div>
-    <div class="subtitle">Regular Expression Sticky Matching</div>
-    <div class="desc">Keep the matching position sticky between matches and
-this way support efficient parsing of arbitrary long input strings,
-even with an arbitrary number of distinct regular expressions.</div>
-<div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code"><span class="keyword">let</span> parser<span class="punctuation"> = </span><span class="punctuation">(</span>input<span class="punctuation">,</span> match<span class="punctuation">)</span> <span class="punctuation">=&gt;</span> <span class="punctuation">{</span>
-    <span class="keyword">for</span> <span class="punctuation">(</span><span class="keyword">let</span> pos<span class="punctuation"> = </span><span class="literal">0</span><span class="punctuation">,</span> lastPos<span class="punctuation"> = </span>input<span class="punctuation">.</span>length<span class="punctuation">;</span> <span class="mark">pos <span class="punctuation">&lt;</span> lastPos</span><span class="punctuation">;</span> <span class="punctuation">)</span> <span class="punctuation">{</span>
-        <span class="keyword">for</span> <span class="punctuation">(</span><span class="keyword">let</span> i<span class="punctuation"> = </span><span class="literal">0</span><span class="punctuation">;</span> i <span class="punctuation">&lt;</span> match<span class="punctuation">.</span>length<span class="punctuation">;</span> i<span class="punctuation">+</span><span class="punctuation">+</span><span class="punctuation">)</span> <span class="punctuation">{</span>
-            <span class="mark">match<span class="punctuation">[</span>i<span class="punctuation">]</span><span class="punctuation">.</span>pattern<span class="punctuation">.</span>lastIndex<span class="punctuation"> = </span>pos</span><span class="semi">;</span>
-            <span class="keyword">let</span> found<span class="semi">;</span>
-            <span class="keyword">if</span> <span class="punctuation">(</span><span class="punctuation">(</span>found<span class="punctuation"> = </span>match<span class="punctuation">[</span>i<span class="punctuation">]</span><span class="punctuation">.</span>pattern<span class="punctuation">.</span>exec<span class="punctuation">(</span>input<span class="punctuation">)</span><span class="punctuation">)</span> !== null<span class="punctuation">)</span> <span class="punctuation">{</span>
-                match<span class="punctuation">[</span>i<span class="punctuation">]</span><span class="punctuation">.</span>action<span class="punctuation">(</span>found<span class="punctuation">)</span><span class="semi">;</span>
-                <span class="mark">pos<span class="punctuation"> = </span>match<span class="punctuation">[</span>i<span class="punctuation">]</span><span class="punctuation">.</span>pattern<span class="punctuation">.</span>lastIndex</span><span class="semi">;</span>
-                break<span class="semi">;</span>
-            <span class="punctuation">}</span>
-        <span class="punctuation">}</span>
-    <span class="punctuation">}</span>
-<span class="punctuation">}</span>
-
-<span class="keyword">let</span> report<span class="punctuation"> = </span><span class="punctuation">(</span>match<span class="punctuation">)</span> <span class="punctuation">=&gt;</span> <span class="punctuation">{</span>
-    console<span class="punctuation">.</span>log<span class="punctuation">(</span>JSON<span class="punctuation">.</span>stringify<span class="punctuation">(</span>match<span class="punctuation">)</span><span class="punctuation">)</span><span class="semi">;</span>
-<span class="punctuation">}</span><span class="semi">;</span>
-parser<span class="punctuation">(</span><span class="literal">"Foo 1 Bar 7 Baz 42"</span><span class="punctuation">,</span> <span class="punctuation">[</span>
-    <span class="punctuation">{</span> pattern: /^Foo\s<span class="punctuation">+</span><span class="punctuation">(</span>\d<span class="punctuation">+</span><span class="punctuation">)</span>/<span class="mark">y</span><span class="punctuation">,</span> action: <span class="punctuation">(</span>match<span class="punctuation">)</span> <span class="punctuation">=&gt;</span> report<span class="punctuation">(</span>match<span class="punctuation">)</span> <span class="punctuation">}</span><span class="punctuation">,</span>
-    <span class="punctuation">{</span> pattern: /^Bar\s<span class="punctuation">+</span><span class="punctuation">(</span>\d<span class="punctuation">+</span><span class="punctuation">)</span>/<span class="mark">y</span><span class="punctuation">,</span> action: <span class="punctuation">(</span>match<span class="punctuation">)</span> <span class="punctuation">=&gt;</span> report<span class="punctuation">(</span>match<span class="punctuation">)</span> <span class="punctuation">}</span><span class="punctuation">,</span>
-    <span class="punctuation">{</span> pattern: /^Baz\s<span class="punctuation">+</span><span class="punctuation">(</span>\d<span class="punctuation">+</span><span class="punctuation">)</span>/<span class="mark">y</span><span class="punctuation">,</span> action: <span class="punctuation">(</span>match<span class="punctuation">)</span> <span class="punctuation">=&gt;</span> report<span class="punctuation">(</span>match<span class="punctuation">)</span> <span class="punctuation">}</span><span class="punctuation">,</span>
-    <span class="punctuation">{</span> pattern: /^\s<span class="punctuation">*</span>/<span class="mark">y</span><span class="punctuation">,</span>         action: <span class="punctuation">(</span>match<span class="punctuation">)</span> <span class="punctuation">=&gt;</span> <span class="punctuation">{</span><span class="punctuation">}</span>            <span class="punctuation">}</span>
-<span class="punctuation">]</span><span class="punctuation">)</span><span class="semi">;</span>
-</div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-check-circle"></i>
-</div>
-    <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code"><span class="keyword">var</span> parser<span class="punctuation"> = </span><span class="keyword">function</span> <span class="punctuation">(</span>input<span class="punctuation">,</span> match<span class="punctuation">)</span> <span class="punctuation">{</span>
-    <span class="keyword">for</span> <span class="punctuation">(</span><span class="keyword">var</span> i<span class="punctuation">,</span> found<span class="punctuation">,</span> <span class="mark">inputTmp<span class="punctuation"> = </span>input</span><span class="punctuation">;</span> <span class="mark">inputTmp !== <span class="literal">""</span></span><span class="punctuation">;</span> <span class="punctuation">)</span> <span class="punctuation">{</span>
-        <span class="keyword">for</span> <span class="punctuation">(</span>i<span class="punctuation"> = </span><span class="literal">0</span><span class="punctuation">;</span> i <span class="punctuation">&lt;</span> match<span class="punctuation">.</span>length<span class="punctuation">;</span> i<span class="punctuation">+</span><span class="punctuation">+</span><span class="punctuation">)</span> <span class="punctuation">{</span>
-            <span class="keyword">if</span> <span class="punctuation">(</span><span class="punctuation">(</span>found<span class="punctuation"> = </span>match<span class="punctuation">[</span>i<span class="punctuation">]</span><span class="punctuation">.</span>pattern<span class="punctuation">.</span>exec<span class="punctuation">(</span>inputTmp<span class="punctuation">)</span><span class="punctuation">)</span> !== null<span class="punctuation">)</span> <span class="punctuation">{</span>
-                match<span class="punctuation">[</span>i<span class="punctuation">]</span><span class="punctuation">.</span>action<span class="punctuation">(</span>found<span class="punctuation">)</span><span class="semi">;</span>
-                <span class="mark">inputTmp<span class="punctuation"> = </span>inputTmp<span class="punctuation">.</span>substr<span class="punctuation">(</span>found<span class="punctuation">[</span><span class="literal">0</span><span class="punctuation">]</span><span class="punctuation">.</span>length<span class="punctuation">)</span></span><span class="semi">;</span>
-                break<span class="semi">;</span>
-            <span class="punctuation">}</span>
-        <span class="punctuation">}</span>
-    <span class="punctuation">}</span>
-<span class="punctuation">}</span>
-
-<span class="keyword">var</span> report<span class="punctuation"> = </span><span class="keyword">function</span> <span class="punctuation">(</span>match<span class="punctuation">)</span> <span class="punctuation">{</span>
-    console<span class="punctuation">.</span>log<span class="punctuation">(</span>JSON<span class="punctuation">.</span>stringify<span class="punctuation">(</span>match<span class="punctuation">)</span><span class="punctuation">)</span><span class="semi">;</span>
-<span class="punctuation">}</span><span class="semi">;</span>
-parser<span class="punctuation">(</span><span class="literal">"Foo 1 Bar 7 Baz 42"</span><span class="punctuation">,</span> <span class="punctuation">[</span>
-    <span class="punctuation">{</span> pattern: /^Foo\s<span class="punctuation">+</span><span class="punctuation">(</span>\d<span class="punctuation">+</span><span class="punctuation">)</span>/<span class="punctuation">,</span> action: <span class="keyword">function</span> <span class="punctuation">(</span>match<span class="punctuation">)</span> <span class="punctuation">{</span> report<span class="punctuation">(</span>match<span class="punctuation">)</span><span class="semi">;</span> <span class="punctuation">}</span> <span class="punctuation">}</span><span class="punctuation">,</span>
-    <span class="punctuation">{</span> pattern: /^Bar\s<span class="punctuation">+</span><span class="punctuation">(</span>\d<span class="punctuation">+</span><span class="punctuation">)</span>/<span class="punctuation">,</span> action: <span class="keyword">function</span> <span class="punctuation">(</span>match<span class="punctuation">)</span> <span class="punctuation">{</span> report<span class="punctuation">(</span>match<span class="punctuation">)</span><span class="semi">;</span> <span class="punctuation">}</span> <span class="punctuation">}</span><span class="punctuation">,</span>
-    <span class="punctuation">{</span> pattern: /^Baz\s<span class="punctuation">+</span><span class="punctuation">(</span>\d<span class="punctuation">+</span><span class="punctuation">)</span>/<span class="punctuation">,</span> action: <span class="keyword">function</span> <span class="punctuation">(</span>match<span class="punctuation">)</span> <span class="punctuation">{</span> report<span class="punctuation">(</span>match<span class="punctuation">)</span><span class="semi">;</span> <span class="punctuation">}</span> <span class="punctuation">}</span><span class="punctuation">,</span>
-    <span class="punctuation">{</span> pattern: /^\s<span class="punctuation">*</span>/<span class="punctuation">,</span>         action: <span class="keyword">function</span> <span class="punctuation">(</span>match<span class="punctuation">)</span> <span class="punctuation">{</span><span class="punctuation">}</span>                 <span class="punctuation">}</span>
-<span class="punctuation">]</span><span class="punctuation">)</span><span class="semi">;</span></div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-times-circle"></i>
-</div>
-</div>
-<div id="PropertyShorthand" class="showcase showcase_PropertyShorthand">    <div class="title">Enhanced Object Properties</div>
-    <div class="subtitle">Property Shorthand</div>
+<div id="PropertyShorthand" class="showcase showcase_PropertyShorthand">    <div class="title">Enhanced Object Properties (增强对象属性)</div>
+    <div class="subtitle">Property Shorthand (属性缩写)</div>
     <div class="desc">Shorter syntax for common object property definition idiom.</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
@@ -755,8 +586,8 @@ parser<span class="punctuation">(</span><span class="literal">"Foo 1 Bar 7 Baz 4
     <i class="icon fa fa-times-circle"></i>
 </div>
 </div>
-<div id="ComputedPropertyNames" class="showcase showcase_ComputedPropertyNames">    <div class="title">Enhanced Object Properties</div>
-    <div class="subtitle">Computed Property Names</div>
+<div id="ComputedPropertyNames" class="showcase showcase_ComputedPropertyNames">    <div class="title">Enhanced Object Properties (增强对象属性)</div>
+    <div class="subtitle">Computed Property Names (计算属性名)</div>
     <div class="desc">Support for computed names in object property definitions.</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
@@ -778,8 +609,8 @@ parser<span class="punctuation">(</span><span class="literal">"Foo 1 Bar 7 Baz 4
     <i class="icon fa fa-times-circle"></i>
 </div>
 </div>
-<div id="MethodProperties" class="showcase showcase_MethodProperties">    <div class="title">Enhanced Object Properties</div>
-    <div class="subtitle">Method Properties</div>
+<div id="MethodProperties" class="showcase showcase_MethodProperties">    <div class="title">Enhanced Object Properties (增强对象属性)</div>
+    <div class="subtitle">Method Properties (方法)</div>
     <div class="desc">Support for method notation in object property definitions,
 for both regular functions and generator functions.</div>
 <div class="js es6">
@@ -815,7 +646,7 @@ for both regular functions and generator functions.</div>
     <i class="icon fa fa-times-circle"></i>
 </div>
 </div>
-<div id="ArrayMatching" class="showcase showcase_ArrayMatching">    <div class="title">Destructuring Assignment</div>
+<div id="ArrayMatching" class="showcase showcase_ArrayMatching">    <div class="title">Destructuring Assignment (解构赋值)</div>
     <div class="subtitle">Array Matching</div>
     <div class="desc">Intuitive and flexible destructuring of Arrays into individual variables during assignment.</div>
 <div class="js es6">
@@ -836,7 +667,7 @@ for both regular functions and generator functions.</div>
     <i class="icon fa fa-times-circle"></i>
 </div>
 </div>
-<div id="ObjectMatchingShorthandNotation" class="showcase showcase_ObjectMatchingShorthandNotation">    <div class="title">Destructuring Assignment</div>
+<div id="ObjectMatchingShorthandNotation" class="showcase showcase_ObjectMatchingShorthandNotation">    <div class="title">Destructuring Assignment (解构赋值)</div>
     <div class="subtitle">Object Matching, Shorthand Notation</div>
     <div class="desc">Intuitive and flexible destructuring of Objects into individual variables during assignment.</div>
 <div class="js es6">
@@ -856,7 +687,7 @@ for both regular functions and generator functions.</div>
     <i class="icon fa fa-times-circle"></i>
 </div>
 </div>
-<div id="ObjectMatchingDeepMatching" class="showcase showcase_ObjectMatchingDeepMatching">    <div class="title">Destructuring Assignment</div>
+<div id="ObjectMatchingDeepMatching" class="showcase showcase_ObjectMatchingDeepMatching">    <div class="title">Destructuring Assignment (解构赋值)</div>
     <div class="subtitle">Object Matching, Deep Matching</div>
     <div class="desc">Intuitive and flexible destructuring of Objects into individual variables during assignment.</div>
 <div class="js es6">
@@ -876,7 +707,7 @@ for both regular functions and generator functions.</div>
     <i class="icon fa fa-times-circle"></i>
 </div>
 </div>
-<div id="ObjectAndArrayMatchingDefaultValues" class="showcase showcase_ObjectAndArrayMatchingDefaultValues">    <div class="title">Destructuring Assignment</div>
+<div id="ObjectAndArrayMatchingDefaultValues" class="showcase showcase_ObjectAndArrayMatchingDefaultValues">    <div class="title">Destructuring Assignment (解构赋值)</div>
     <div class="subtitle">Object And Array Matching, Default Values</div>
     <div class="desc">Simple and intuitive default values for destructuring of Objects and Arrays.</div>
 <div class="js es6">
@@ -901,7 +732,7 @@ for both regular functions and generator functions.</div>
     <i class="icon fa fa-times-circle"></i>
 </div>
 </div>
-<div id="ParameterContextMatching" class="showcase showcase_ParameterContextMatching">    <div class="title">Destructuring Assignment</div>
+<div id="ParameterContextMatching" class="showcase showcase_ParameterContextMatching">    <div class="title">Destructuring Assignment (解构赋值)</div>
     <div class="subtitle">Parameter Context Matching</div>
     <div class="desc">Intuitive and flexible destructuring of Arrays and Objects into individual parameters during function calls.</div>
 <div class="js es6">
@@ -946,7 +777,7 @@ h<span class="punctuation">(</span><span class="punctuation">{</span> name: <spa
     <i class="icon fa fa-times-circle"></i>
 </div>
 </div>
-<div id="FailSoftDestructuring" class="showcase showcase_FailSoftDestructuring">    <div class="title">Destructuring Assignment</div>
+<div id="FailSoftDestructuring" class="showcase showcase_FailSoftDestructuring">    <div class="title">Destructuring Assignment (解构赋值)</div>
     <div class="subtitle">Fail-Soft Destructuring</div>
     <div class="desc">Fail-soft destructuring, optionally with defaults.</div>
 <div class="js es6">
