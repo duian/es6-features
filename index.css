@@ -36,11 +36,13 @@
 
 body {
     background-color: #444444;
+    background-color: #01D0C2;
     font-family: "TypoPRO Open Sans", sans-serif;
     font-size: 10pt;
     margin: 0px;
     padding: 0px;
     position: relative;
+    /* min-height: 2000px; */
 }
 
 code {
@@ -53,12 +55,13 @@ code {
     top: 0;
     width: 100%;
     height: 30px;
-    background-color: #222222;
+    /* background-color: #222222; */
+    background-color: #232B49;
     color: #e0e0e0;
     font-size: 160%;
     padding: 14px 40px 10px 40px;
-    -webkit-box-shadow: 2px 2px 4px 0px #444444;
-    box-shadow: 2px 2px 4px 0px #444444;
+    /* -webkit-box-shadow: 2px 2px 4px 0px #444444; */
+    /* box-shadow */: 2px 2px 4px 0px #444444;
     z-index: 1000;
 }
 .head .bold {
@@ -75,8 +78,8 @@ code {
     color: #909090;
     font-size: 80%;
     padding: 14px 0px 10px 0px;
-    -webkit-box-shadow: 2px 2px 4px 0px #444444;
-    box-shadow: 2px 2px 4px 0px #444444;
+    -webkit-/* box-shadow */: 2px 2px 4px 0px #444444;
+    /* box-shadow */: 2px 2px 4px 0px #444444;
     text-align: right;
     z-index: 1000;
 }
@@ -164,15 +167,15 @@ code {
     top: 80px;
     margin-left: 30px;
     width: 320px;
-    background-color: #222222;
+    background-color: #232B49;
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: auto;
     padding-left: 0px;
-    height: calc(100% - 180px);
-    -webkit-border-radius: 4px 4px 4px 4px;
-    border-radius: 4px 4px 4px 4px;
-    -webkit-box-shadow: 2px 2px 4px 0px #444444;
-    box-shadow: 2px 2px 4px 0px #444444;
+    height: calc(100% - 100px);
+    /* -webkit-border-radius: 4px 4px 4px 4px; */
+    /* border-radius: 4px 4px 4px 4px; */
+    -webkit-/* box-shadow */: 2px 2px 4px 0px #444444;
+    /* box-shadow */: 2px 2px 4px 0px #444444;
 }
 .nav > ul {
     position: relative;
@@ -183,7 +186,7 @@ code {
     width: 100%;
 }
 .nav > ul > li {
-    background-color: #222222;
+    background-color: #232B49;
     color: #e0e0e0;
     font-weight: bold;
     padding-left: 10px;
@@ -206,7 +209,7 @@ code {
     width: 100%;
 }
 .nav > ul > li > ul > li {
-    background-color: #111111;
+    background-color: #343f6b;
     color: #000000;
     font-weight: normal;
     width: 100%;
@@ -241,20 +244,24 @@ code {
     left: 380px;
     top: 80px;
     width: calc(100% - 380px - 30px);
-    height: calc(100% - 180px);
-    overflow: scroll;
+    height: calc(100% - 140px);
+    overflow: hidden;
 }
 
 .content .title {
     font-size: 180%;
     font-weight: 800;
     color: #ffffff;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .content .subtitle {
     font-size: 140%;
     font-weight: bold;
     color: #ffffff;
     margin-top: -2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .content .desc {
@@ -273,25 +280,27 @@ code {
 }
 
 .content .js {
-    margin: 00px 0px 00px 0px;
+    margin: 0 0 0 0;
     width: 100%;
-    -webkit-border-radius: 4px 4px 4px 4px;
-    border-radius: 4px 4px 4px 4px;
-    -webkit-box-shadow: 2px 2px 4px 0px #444444;
-    box-shadow: 2px 2px 4px 0px #444444;
+    /* -webkit-border-radius: 4px 4px 4px 4px; */
+    /* border-radius: 4px 4px 4px 4px; */
+    /* -webkit-/* box-shadow */: 2px 2px 4px 0px #444444; */
+    /* box-shadow */: 2px 2px 4px 0px #444444;
     position: relative;
 }
 .content .js.es6 {
     margin-top: 30px;
+    /* margin-right: 30px; */
 }
 .content .js .title {
+    /* margin-right: 20px; */
     font-size: 80%;
     font-weight: 300;
-    color: #cccccc;
-    background-color: #222222;
-    padding: 4px 10px 2px 10px;
-    -webkit-border-radius: 4px 4px 0px 0px;
-    border-radius: 4px 4px 0px 0px;
+    color: #fff;
+    background-color: #379187;
+    padding: 4px 10px 4px 10px;
+    /* -webkit-border-radius: 4px 4px 0px 0px; */
+    /* border-radius: 4px 4px 0px 0px; */
 }
 .content .js .title b {
     font-weight: bold;
@@ -311,20 +320,21 @@ code {
     font-size: 11pt;
     display: block;
     white-space: pre;
+    /* margin-right: 20px; */
     background-color: white;
     padding: 10px 10px 10px 10px;
-    -webkit-border-radius: 0px 0px 4px 4px;
-    border-radius: 0px 0px 4px 4px;
-    overflow-x: scroll;
+    /* -webkit-border-radius: 0px 0px 4px 4px; */
+    /* border-radius: 0px 0px px 4px; */
+    /* overflow-x: scroll; */
     line-height: 1.25;
 }
 .content .js.es5 .code {
-    border-left: 10px solid #990000;
-    border-right: 10px solid #ffffff;
+    /* border-left: 10px solid #990000; */
+    /* border-right: 10px solid #ffffff; */
 }
 .content .js.es6 .code {
-    border-left: 10px solid #009900;
-    border-right: 10px solid #ffffff;
+    /* border-left: 10px solid #009900; */
+    /* border-right: 10px solid #ffffff; */
 }
 .content .js .code .keyword {
     font-weight: bold;
@@ -354,8 +364,8 @@ code {
 .content .js .code .mark {
     background-color: #f0f8ff;
     padding: 0px 0px 0px 0px;
-    -webkit-border-radius: 2px 2px 2px 2px;
-    border-radius: 2px 2px 2px 2px;
+    /* -webkit-border-radius: 2px 2px 2px 2px; */
+    /* border-radius: 2px 2px 2px 2px; */
     border-top: 1px solid #e0e8ef;
     border-bottom: 1px solid #e0e8ef;
 }
@@ -366,7 +376,7 @@ code {
     z-index: 999;
     position: absolute;
     top: 5px;
-    right: 5px;
+    right: 25px;
     font-size: 30px;
 }
 .content .js.es5 .icon {
@@ -381,6 +391,7 @@ code {
 }
 
 .arrow {
+    visibility: hidden;
     width: 100%;
     text-align: center;
     font-size: 50px;
