@@ -33,21 +33,6 @@
         <link href="index.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <a href="https://github.com/rse/es6-features">
-            <img style="position: fixed; top: 0; right: 0; border: 0; z-index: 2000;"
-                 src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67"
-                 alt="Fork me on GitHub"
-                 data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"/>
-        </a>
-        <iframe id="starbutton" src="https://ghbtns.com/github-btn.html?user=rse&repo=es6-features&type=star&count=true"
-            frameborder="0" scrolling="0" width="170px" height="20px">
-        </iframe>
-        <a class="twitter-share-button" href="https://twitter.com/share"
-            data-url="http://es6-features.org"
-            data-text="See how cleaner and more concise JavaScript can look and start coding in ECMAScript 6 now! @engelschall's"
-            data-hashtags="ES6"
-            data-related="engelschall"
-        >Tweet</a>
         <script>
             !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>0
         </script>
@@ -121,88 +106,58 @@
 <li class="title">Destructuring Assignment (解构赋值)
     <ul>
 <li class="subtitle subtitle_ArrayMatching">
-    <a href="#ArrayMatching">Array Matching</a> <i class="fa fa-arrow-circle-right"></i></li>
+    <a href="#ArrayMatching">Array Matching (数组)</a> <i class="fa fa-arrow-circle-right"></i></li>
 <li class="subtitle subtitle_ObjectMatchingShorthandNotation">
-    <a href="#ObjectMatchingShorthandNotation">Object Matching, Shorthand Notation</a> <i class="fa fa-arrow-circle-right"></i></li>
+    <a href="#ObjectMatchingShorthandNotation">Object Matching, Shorthand Notation (对象，简写)</a> <i class="fa fa-arrow-circle-right"></i></li>
 <li class="subtitle subtitle_ObjectMatchingDeepMatching">
-    <a href="#ObjectMatchingDeepMatching">Object Matching, Deep Matching</a> <i class="fa fa-arrow-circle-right"></i></li>
+    <a href="#ObjectMatchingDeepMatching">Object Matching, Deep Matching (嵌套匹配)</a> <i class="fa fa-arrow-circle-right"></i></li>
 <li class="subtitle subtitle_ObjectAndArrayMatchingDefaultValues">
-    <a href="#ObjectAndArrayMatchingDefaultValues">Object And Array Matching, Default Values</a> <i class="fa fa-arrow-circle-right"></i></li>
+    <a href="#ObjectAndArrayMatchingDefaultValues">Object And Array Matching, Default Values (默认值)</a> <i class="fa fa-arrow-circle-right"></i></li>
 <li class="subtitle subtitle_ParameterContextMatching">
-    <a href="#ParameterContextMatching">Parameter Context Matching</a> <i class="fa fa-arrow-circle-right"></i></li>
+    <a href="#ParameterContextMatching">Parameter Context Matching (参数)</a> <i class="fa fa-arrow-circle-right"></i></li>
 <li class="subtitle subtitle_FailSoftDestructuring">
-    <a href="#FailSoftDestructuring">Fail-Soft Destructuring</a> <i class="fa fa-arrow-circle-right"></i></li>
+    <a href="#FailSoftDestructuring">Fail-Soft Destructuring (不会翻译)</a> <i class="fa fa-arrow-circle-right"></i></li>
     </ul>
 </li>
-<li class="title">Modules
+<li class="title">Modules (模块)
     <ul>
 <li class="subtitle subtitle_ValueExportImport">
-    <a href="#ValueExportImport">Value Export/Import</a> <i class="fa fa-arrow-circle-right"></i></li>
+    <a href="#ValueExportImport">Value Export/Import (导入/导入)</a> <i class="fa fa-arrow-circle-right"></i></li>
 <li class="subtitle subtitle_DefaultWildcard">
-    <a href="#DefaultWildcard">Default & Wildcard</a> <i class="fa fa-arrow-circle-right"></i></li>
+    <a href="#DefaultWildcard">Default & Wildcard (默认值 & 通配符)</a> <i class="fa fa-arrow-circle-right"></i></li>
     </ul>
 </li>
-<li class="title">Classes
+<li class="title">Classes (类)
     <ul>
 <li class="subtitle subtitle_ClassDefinition">
-    <a href="#ClassDefinition">Class Definition</a> <i class="fa fa-arrow-circle-right"></i></li>
+    <a href="#ClassDefinition">Class Definition (类定义)</a> <i class="fa fa-arrow-circle-right"></i></li>
 <li class="subtitle subtitle_ClassInheritance">
-    <a href="#ClassInheritance">Class Inheritance</a> <i class="fa fa-arrow-circle-right"></i></li>
+    <a href="#ClassInheritance">Class Inheritance (类继承)</a> <i class="fa fa-arrow-circle-right"></i></li>
 <li class="subtitle subtitle_ClassInheritanceFromExpressions">
-    <a href="#ClassInheritanceFromExpressions">Class Inheritance, From Expressions</a> <i class="fa fa-arrow-circle-right"></i></li>
+    <a href="#ClassInheritanceFromExpressions">Class Inheritance, From Expressions (基类入口)</a> <i class="fa fa-arrow-circle-right"></i></li>
 <li class="subtitle subtitle_BaseClassAccess">
-    <a href="#BaseClassAccess">Base Class Access</a> <i class="fa fa-arrow-circle-right"></i></li>
+    <a href="#BaseClassAccess">Base Class Access  (基类调用)</a> <i class="fa fa-arrow-circle-right"></i></li>
 <li class="subtitle subtitle_StaticMembers">
-    <a href="#StaticMembers">Static Members</a> <i class="fa fa-arrow-circle-right"></i></li>
+    <a href="#StaticMembers">Static Members (静态方法&属性)</a> <i class="fa fa-arrow-circle-right"></i></li>
 <li class="subtitle subtitle_GetterSetter">
-    <a href="#GetterSetter">Getter/Setter</a> <i class="fa fa-arrow-circle-right"></i></li>
+    <a href="#GetterSetter">Getter/Setter (取值&设值)</a> <i class="fa fa-arrow-circle-right"></i></li>
     </ul>
 </li>
-<li class="title">Symbol Type
+<li class="title">Symbol Type (原始数据类型)
     <ul>
 <li class="subtitle subtitle_SymbolType">
     <a href="#SymbolType">Symbol Type</a> <i class="fa fa-arrow-circle-right"></i></li>
-<li class="subtitle subtitle_GlobalSymbols">
-    <a href="#GlobalSymbols">Global Symbols</a> <i class="fa fa-arrow-circle-right"></i></li>
     </ul>
 </li>
-<li class="title">Iterators
-    <ul>
-<li class="subtitle subtitle_IteratorForOfOperator">
-    <a href="#IteratorForOfOperator">Iterator & For-Of Operator</a> <i class="fa fa-arrow-circle-right"></i></li>
-    </ul>
-</li>
-<li class="title">Generators
-    <ul>
-<li class="subtitle subtitle_GeneratorFunctionIteratorProtocol">
-    <a href="#GeneratorFunctionIteratorProtocol">Generator Function, Iterator Protocol</a> <i class="fa fa-arrow-circle-right"></i></li>
-<li class="subtitle subtitle_GeneratorFunctionDirectUse">
-    <a href="#GeneratorFunctionDirectUse">Generator Function, Direct Use</a> <i class="fa fa-arrow-circle-right"></i></li>
-<li class="subtitle subtitle_GeneratorMatching">
-    <a href="#GeneratorMatching">Generator Matching</a> <i class="fa fa-arrow-circle-right"></i></li>
-<li class="subtitle subtitle_GeneratorControlFlow">
-    <a href="#GeneratorControlFlow">Generator Control-Flow</a> <i class="fa fa-arrow-circle-right"></i></li>
-<li class="subtitle subtitle_GeneratorMethods">
-    <a href="#GeneratorMethods">Generator Methods</a> <i class="fa fa-arrow-circle-right"></i></li>
-    </ul>
-</li>
-<li class="title">Map/Set & WeakMap/WeakSet
+<li class="title">Map/Set
     <ul>
 <li class="subtitle subtitle_SetDataStructure">
-    <a href="#SetDataStructure">Set Data-Structure</a> <i class="fa fa-arrow-circle-right"></i></li>
+    <a href="#SetDataStructure">Set Data-Structure (集合)</a> <i class="fa fa-arrow-circle-right"></i></li>
 <li class="subtitle subtitle_MapDataStructure">
-    <a href="#MapDataStructure">Map Data-Structure</a> <i class="fa fa-arrow-circle-right"></i></li>
-<li class="subtitle subtitle_WeakLinkDataStructures">
-    <a href="#WeakLinkDataStructures">Weak-Link Data-Structures</a> <i class="fa fa-arrow-circle-right"></i></li>
+    <a href="#MapDataStructure">Map Data-Structure (字典)</a> <i class="fa fa-arrow-circle-right"></i></li>
     </ul>
 </li>
-<li class="title">Typed Arrays
-    <ul>
-<li class="subtitle subtitle_TypedArrays">
-    <a href="#TypedArrays">Typed Arrays</a> <i class="fa fa-arrow-circle-right"></i></li>
-    </ul>
-</li>
-<li class="title">New Built-In Methods
+<li class="title">New Built-In Methods (新增内建方法)
     <ul>
 <li class="subtitle subtitle_ObjectPropertyAssignment">
     <a href="#ObjectPropertyAssignment">Object Property Assignment</a> <i class="fa fa-arrow-circle-right"></i></li>
@@ -212,24 +167,6 @@
     <a href="#StringRepeating">String Repeating</a> <i class="fa fa-arrow-circle-right"></i></li>
 <li class="subtitle subtitle_StringSearching">
     <a href="#StringSearching">String Searching</a> <i class="fa fa-arrow-circle-right"></i></li>
-<li class="subtitle subtitle_NumberTypeChecking">
-    <a href="#NumberTypeChecking">Number Type Checking</a> <i class="fa fa-arrow-circle-right"></i></li>
-<li class="subtitle subtitle_NumberSafetyChecking">
-    <a href="#NumberSafetyChecking">Number Safety Checking</a> <i class="fa fa-arrow-circle-right"></i></li>
-<li class="subtitle subtitle_NumberComparison">
-    <a href="#NumberComparison">Number Comparison</a> <i class="fa fa-arrow-circle-right"></i></li>
-<li class="subtitle subtitle_NumberTruncation">
-    <a href="#NumberTruncation">Number Truncation</a> <i class="fa fa-arrow-circle-right"></i></li>
-<li class="subtitle subtitle_NumberSignDetermination">
-    <a href="#NumberSignDetermination">Number Sign Determination</a> <i class="fa fa-arrow-circle-right"></i></li>
-    </ul>
-</li>
-<li class="title">Promises
-    <ul>
-<li class="subtitle subtitle_PromiseUsage">
-    <a href="#PromiseUsage">Promise Usage</a> <i class="fa fa-arrow-circle-right"></i></li>
-<li class="subtitle subtitle_PromiseCombination">
-    <a href="#PromiseCombination">Promise Combination</a> <i class="fa fa-arrow-circle-right"></i></li>
     </ul>
 </li>
 <li class="title">Meta-Programming
@@ -238,18 +175,6 @@
     <a href="#Proxying">Proxying</a> <i class="fa fa-arrow-circle-right"></i></li>
 <li class="subtitle subtitle_Reflection">
     <a href="#Reflection">Reflection</a> <i class="fa fa-arrow-circle-right"></i></li>
-    </ul>
-</li>
-<li class="title">Internationalization & Localization
-    <ul>
-<li class="subtitle subtitle_Collation">
-    <a href="#Collation">Collation</a> <i class="fa fa-arrow-circle-right"></i></li>
-<li class="subtitle subtitle_NumberFormatting">
-    <a href="#NumberFormatting">Number Formatting</a> <i class="fa fa-arrow-circle-right"></i></li>
-<li class="subtitle subtitle_CurrencyFormatting">
-    <a href="#CurrencyFormatting">Currency Formatting</a> <i class="fa fa-arrow-circle-right"></i></li>
-<li class="subtitle subtitle_DateTimeFormatting">
-    <a href="#DateTimeFormatting">Date/Time Formatting</a> <i class="fa fa-arrow-circle-right"></i></li>
     </ul>
 </li>
 </ul>
@@ -647,7 +572,7 @@ for both regular functions and generator functions.</div>
 </div>
 </div>
 <div id="ArrayMatching" class="showcase showcase_ArrayMatching">    <div class="title">Destructuring Assignment (解构赋值)</div>
-    <div class="subtitle">Array Matching</div>
+    <div class="subtitle">Array Matching (数组)</div>
     <div class="desc">Intuitive and flexible destructuring of Arrays into individual variables during assignment.</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
@@ -668,7 +593,7 @@ for both regular functions and generator functions.</div>
 </div>
 </div>
 <div id="ObjectMatchingShorthandNotation" class="showcase showcase_ObjectMatchingShorthandNotation">    <div class="title">Destructuring Assignment (解构赋值)</div>
-    <div class="subtitle">Object Matching, Shorthand Notation</div>
+    <div class="subtitle">Object Matching, Shorthand Notation (对象，简写)</div>
     <div class="desc">Intuitive and flexible destructuring of Objects into individual variables during assignment.</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
@@ -688,7 +613,7 @@ for both regular functions and generator functions.</div>
 </div>
 </div>
 <div id="ObjectMatchingDeepMatching" class="showcase showcase_ObjectMatchingDeepMatching">    <div class="title">Destructuring Assignment (解构赋值)</div>
-    <div class="subtitle">Object Matching, Deep Matching</div>
+    <div class="subtitle">Object Matching, Deep Matching (嵌套匹配)</div>
     <div class="desc">Intuitive and flexible destructuring of Objects into individual variables during assignment.</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
@@ -708,7 +633,7 @@ for both regular functions and generator functions.</div>
 </div>
 </div>
 <div id="ObjectAndArrayMatchingDefaultValues" class="showcase showcase_ObjectAndArrayMatchingDefaultValues">    <div class="title">Destructuring Assignment (解构赋值)</div>
-    <div class="subtitle">Object And Array Matching, Default Values</div>
+    <div class="subtitle">Object And Array Matching, Default Values (默认值)</div>
     <div class="desc">Simple and intuitive default values for destructuring of Objects and Arrays.</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
@@ -733,7 +658,7 @@ for both regular functions and generator functions.</div>
 </div>
 </div>
 <div id="ParameterContextMatching" class="showcase showcase_ParameterContextMatching">    <div class="title">Destructuring Assignment (解构赋值)</div>
-    <div class="subtitle">Parameter Context Matching</div>
+    <div class="subtitle">Parameter Context Matching (参数)</div>
     <div class="desc">Intuitive and flexible destructuring of Arrays and Objects into individual parameters during function calls.</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
@@ -778,7 +703,7 @@ h<span class="punctuation">(</span><span class="punctuation">{</span> name: <spa
 </div>
 </div>
 <div id="FailSoftDestructuring" class="showcase showcase_FailSoftDestructuring">    <div class="title">Destructuring Assignment (解构赋值)</div>
-    <div class="subtitle">Fail-Soft Destructuring</div>
+    <div class="subtitle">Fail-Soft Destructuring (不会翻译)</div>
     <div class="desc">Fail-soft destructuring, optionally with defaults.</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
@@ -807,8 +732,8 @@ d <span class="punctuation">===</span> <span class="mark">undefined</span><span 
     <i class="icon fa fa-times-circle"></i>
 </div>
 </div>
-<div id="ValueExportImport" class="showcase showcase_ValueExportImport">    <div class="title">Modules</div>
-    <div class="subtitle">Value Export/Import</div>
+<div id="ValueExportImport" class="showcase showcase_ValueExportImport">    <div class="title">Modules (模块)</div>
+    <div class="subtitle">Value Export/Import (导入/导入)</div>
     <div class="desc">Support for exporting/importing values from/to modules without global namespace pollution.</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
@@ -845,8 +770,8 @@ console<span class="punctuation">.</span>log<span class="punctuation">(</span><s
     <i class="icon fa fa-times-circle"></i>
 </div>
 </div>
-<div id="DefaultWildcard" class="showcase showcase_DefaultWildcard">    <div class="title">Modules</div>
-    <div class="subtitle">Default & Wildcard</div>
+<div id="DefaultWildcard" class="showcase showcase_DefaultWildcard">    <div class="title">Modules (模块)</div>
+    <div class="subtitle">Default & Wildcard (默认值 & 通配符)</div>
     <div class="desc">Marking a value as the default exported value and mass-mixin of values.</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
@@ -879,8 +804,8 @@ console<span class="punctuation">.</span>log<span class="punctuation">(</span><s
     <i class="icon fa fa-times-circle"></i>
 </div>
 </div>
-<div id="ClassDefinition" class="showcase showcase_ClassDefinition">    <div class="title">Classes</div>
-    <div class="subtitle">Class Definition</div>
+<div id="ClassDefinition" class="showcase showcase_ClassDefinition">    <div class="title">Classes (类)</div>
+    <div class="subtitle">Class Definition (类定义)</div>
     <div class="desc">More intuitive, OOP-style and boilerplate-free classes.</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
@@ -912,8 +837,8 @@ Shape<span class="punctuation">.</span><span class="mark">prototype<span class="
     <i class="icon fa fa-times-circle"></i>
 </div>
 </div>
-<div id="ClassInheritance" class="showcase showcase_ClassInheritance">    <div class="title">Classes</div>
-    <div class="subtitle">Class Inheritance</div>
+<div id="ClassInheritance" class="showcase showcase_ClassInheritance">    <div class="title">Classes (类)</div>
+    <div class="subtitle">Class Inheritance (类继承)</div>
     <div class="desc">More intuitive, OOP-style and boilerplate-free inheritance.</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
@@ -953,8 +878,8 @@ Shape<span class="punctuation">.</span><span class="mark">prototype<span class="
     <i class="icon fa fa-times-circle"></i>
 </div>
 </div>
-<div id="ClassInheritanceFromExpressions" class="showcase showcase_ClassInheritanceFromExpressions">    <div class="title">Classes</div>
-    <div class="subtitle">Class Inheritance, From Expressions</div>
+<div id="ClassInheritanceFromExpressions" class="showcase showcase_ClassInheritanceFromExpressions">    <div class="title">Classes (类)</div>
+    <div class="subtitle">Class Inheritance, From Expressions (基类入口)</div>
     <div class="desc">Support for mixin-style inheritance by extending from expressions yielding
 function objects. [Notice: the generic <code>aggregation</code> function is usually provided
 by a library like <a href="https://github.com/rse/aggregation">this one</a>, of course]</div>
@@ -1079,8 +1004,8 @@ console<span class="punctuation">.</span>log<span class="punctuation">(</span>re
     <i class="icon fa fa-times-circle"></i>
 </div>
 </div>
-<div id="BaseClassAccess" class="showcase showcase_BaseClassAccess">    <div class="title">Classes</div>
-    <div class="subtitle">Base Class Access</div>
+<div id="BaseClassAccess" class="showcase showcase_BaseClassAccess">    <div class="title">Classes (类)</div>
+    <div class="subtitle">Base Class Access  (基类调用)</div>
     <div class="desc">Intuitive access to base class constructor and methods.</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
@@ -1138,8 +1063,8 @@ Circle<span class="mark"><span class="punctuation">.</span>prototype<span class=
     <i class="icon fa fa-times-circle"></i>
 </div>
 </div>
-<div id="StaticMembers" class="showcase showcase_StaticMembers">    <div class="title">Classes</div>
-    <div class="subtitle">Static Members</div>
+<div id="StaticMembers" class="showcase showcase_StaticMembers">    <div class="title">Classes (类)</div>
+    <div class="subtitle">Static Members (静态方法&属性)</div>
     <div class="desc">Simple support for static class members.</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
@@ -1181,8 +1106,8 @@ Circle<span class="mark"><span class="punctuation">.</span>prototype<span class=
     <i class="icon fa fa-times-circle"></i>
 </div>
 </div>
-<div id="GetterSetter" class="showcase showcase_GetterSetter">    <div class="title">Classes</div>
-    <div class="subtitle">Getter/Setter</div>
+<div id="GetterSetter" class="showcase showcase_GetterSetter">    <div class="title">Classes (类)</div>
+    <div class="subtitle">Getter/Setter (取值&设值)</div>
     <div class="desc">Getter/Setter also directly within classes (and not just within object
 initializers, as it is possible since ECMAScript 5.1).</div>
 <div class="js es6">
@@ -1223,7 +1148,7 @@ r<span class="punctuation">.</span>area <span class="punctuation">===</span> <sp
     <i class="icon fa fa-times-circle"></i>
 </div>
 </div>
-<div id="SymbolType" class="showcase showcase_SymbolType">    <div class="title">Symbol Type</div>
+<div id="SymbolType" class="showcase showcase_SymbolType">    <div class="title">Symbol Type (原始数据类型)</div>
     <div class="subtitle">Symbol Type</div>
     <div class="desc">Unique and immutable data type to be used as an identifier for object properties.
 Symbol can have an optional description, but for debugging purposes only.</div>
@@ -1252,308 +1177,8 @@ Object<span class="punctuation">.</span><span class="mark">getOwnPropertySymbols
     <i class="icon fa fa-times-circle"></i>
 </div>
 </div>
-<div id="GlobalSymbols" class="showcase showcase_GlobalSymbols">    <div class="title">Symbol Type</div>
-    <div class="subtitle">Global Symbols</div>
-    <div class="desc">Global symbols, indexed through unique keys.</div>
-<div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code">Symbol<span class="punctuation">.</span><span class="keyword">for</span><span class="punctuation">(</span><span class="literal">"app<span class="punctuation">.</span>foo"</span><span class="punctuation">)</span> <span class="mark"><span class="punctuation">===</span></span> Symbol<span class="punctuation">.</span><span class="keyword">for</span><span class="punctuation">(</span><span class="literal">"app<span class="punctuation">.</span>foo"</span><span class="punctuation">)</span>
-<span class="keyword">const</span> foo<span class="punctuation"> = </span>Symbol<span class="punctuation">.</span><span class="keyword">for</span><span class="punctuation">(</span><span class="literal">"app<span class="punctuation">.</span>foo"</span><span class="punctuation">)</span><span class="semi">;</span>
-<span class="keyword">const</span> bar<span class="punctuation"> = </span>Symbol<span class="punctuation">.</span><span class="keyword">for</span><span class="punctuation">(</span><span class="literal">"app<span class="punctuation">.</span>bar"</span><span class="punctuation">)</span><span class="semi">;</span>
-Symbol<span class="punctuation">.</span>keyFor<span class="punctuation">(</span>foo<span class="punctuation">)</span> <span class="punctuation">===</span> <span class="literal">"app<span class="punctuation">.</span>foo"</span><span class="semi">;</span>
-Symbol<span class="punctuation">.</span>keyFor<span class="punctuation">(</span>bar<span class="punctuation">)</span> <span class="punctuation">===</span> <span class="literal">"app<span class="punctuation">.</span>bar"</span><span class="semi">;</span>
-typeof foo <span class="punctuation">===</span> <span class="mark"><span class="literal">"symbol"</span></span><span class="semi">;</span>
-typeof bar <span class="punctuation">===</span> <span class="mark"><span class="literal">"symbol"</span></span><span class="semi">;</span>
-<span class="keyword">let</span> obj<span class="punctuation"> = </span><span class="punctuation">{</span><span class="punctuation">}</span><span class="semi">;</span>
-obj<span class="punctuation">[</span>foo<span class="punctuation">]</span><span class="punctuation"> = </span><span class="literal">"foo"</span><span class="semi">;</span>
-obj<span class="punctuation">[</span>bar<span class="punctuation">]</span><span class="punctuation"> = </span><span class="literal">"bar"</span><span class="semi">;</span>
-JSON<span class="punctuation">.</span>stringify<span class="punctuation">(</span>obj<span class="punctuation">)</span><span class="semi">;</span><span class="comment"> // <span class="punctuation">{</span><span class="punctuation">}</span></span>
-Object<span class="punctuation">.</span>keys<span class="punctuation">(</span>obj<span class="punctuation">)</span><span class="semi">;</span><span class="comment"> // <span class="punctuation">[</span><span class="punctuation">]</span></span>
-Object<span class="punctuation">.</span>getOwnPropertyNames<span class="punctuation">(</span>obj<span class="punctuation">)</span><span class="semi">;</span><span class="comment"> // <span class="punctuation">[</span><span class="punctuation">]</span></span>
-Object<span class="punctuation">.</span><span class="mark">getOwnPropertySymbols</span><span class="punctuation">(</span>obj<span class="punctuation">)</span><span class="semi">;</span><span class="comment"> // <span class="punctuation">[</span> foo<span class="punctuation">,</span> bar <span class="punctuation">]</span></span>
-</div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-check-circle"></i>
-</div>
-    <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code"><span class="comment">// no equivalent <span class="keyword">in</span> ES<span class="literal">5</span></span></div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-times-circle"></i>
-</div>
-</div>
-<div id="IteratorForOfOperator" class="showcase showcase_IteratorForOfOperator">    <div class="title">Iterators</div>
-    <div class="subtitle">Iterator & For-Of Operator</div>
-    <div class="desc">Support "iterable" protocol to allow objects to customize their
-iteration behaviour. Additionally, support "iterator" protocol to produce
-sequence of values (either finite or infinite). Finally, provide
-convenient <code>of</code> operator to iterate over all values of an iterable object.</div>
-<div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code"><span class="keyword">let</span> fibonacci<span class="punctuation"> = </span><span class="punctuation">{</span>
-    <span class="mark"><span class="punctuation">[</span>Symbol<span class="punctuation">.</span>iterator<span class="punctuation">]</span><span class="punctuation">(</span><span class="punctuation">)</span></span> <span class="punctuation">{</span>
-        <span class="keyword">let</span> pre<span class="punctuation"> = </span><span class="literal">0</span><span class="punctuation">,</span> cur<span class="punctuation"> = </span><span class="literal">1</span><span class="semi">;</span>
-        <span class="keyword">return</span> <span class="punctuation">{</span>
-           <span class="mark">next <span class="punctuation">(</span><span class="punctuation">)</span></span> <span class="punctuation">{</span>
-               <span class="punctuation">[</span> pre<span class="punctuation">,</span> cur <span class="punctuation">]</span><span class="punctuation"> = </span><span class="punctuation">[</span> cur<span class="punctuation">,</span> pre <span class="punctuation">+</span> cur <span class="punctuation">]</span><span class="semi">;</span>
-               <span class="keyword">return</span> <span class="mark"><span class="punctuation">{</span> done: false<span class="punctuation">,</span> value: cur <span class="punctuation">}</span></span><span class="semi">;</span>
-           <span class="punctuation">}</span>
-        <span class="punctuation">}</span><span class="semi">;</span>
-    <span class="punctuation">}</span>
-<span class="punctuation">}</span>
-
-<span class="keyword">for</span> <span class="punctuation">(</span><span class="keyword">let</span> n <span class="mark"><span class="keyword">of</span></span> fibonacci<span class="punctuation">)</span> <span class="punctuation">{</span>
-    <span class="keyword">if</span> <span class="punctuation">(</span>n <span class="punctuation">&gt;</span> <span class="literal">1000</span><span class="punctuation">)</span>
-        break<span class="semi">;</span>
-    console<span class="punctuation">.</span>log<span class="punctuation">(</span>n<span class="punctuation">)</span><span class="semi">;</span>
-<span class="punctuation">}</span>
-</div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-check-circle"></i>
-</div>
-    <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code"><span class="keyword">var</span> fibonacci<span class="punctuation"> = </span><span class="punctuation">{</span>
-    <span class="mark">next:</span> <span class="punctuation">(</span><span class="keyword">function</span> <span class="punctuation">(</span><span class="punctuation">)</span> <span class="punctuation">{</span>
-        <span class="keyword">var</span> pre<span class="punctuation"> = </span><span class="literal">0</span><span class="punctuation">,</span> cur<span class="punctuation"> = </span><span class="literal">1</span><span class="semi">;</span>
-        <span class="keyword">return</span> <span class="keyword">function</span> <span class="punctuation">(</span><span class="punctuation">)</span> <span class="punctuation">{</span>
-            tmp<span class="punctuation"> = </span>pre<span class="semi">;</span>
-            pre<span class="punctuation"> = </span>cur<span class="semi">;</span>
-            cur <span class="punctuation">+</span>= tmp<span class="semi">;</span>
-            <span class="keyword">return</span> cur<span class="semi">;</span>
-        <span class="punctuation">}</span><span class="semi">;</span>
-    <span class="punctuation">}</span><span class="punctuation">)</span><span class="punctuation">(</span><span class="punctuation">)</span>
-<span class="punctuation">}</span><span class="semi">;</span>
-
-<span class="keyword">var</span> n<span class="semi">;</span>
-<span class="keyword">for</span> <span class="punctuation">(</span><span class="punctuation">;</span><span class="punctuation">;</span><span class="punctuation">)</span> <span class="punctuation">{</span>
-    n<span class="punctuation"> = </span>fibonacci<span class="mark"><span class="punctuation">.</span>next<span class="punctuation">(</span><span class="punctuation">)</span></span><span class="semi">;</span>
-    <span class="keyword">if</span> <span class="punctuation">(</span>n <span class="punctuation">&gt;</span> <span class="literal">1000</span><span class="punctuation">)</span>
-        break<span class="semi">;</span>
-    console<span class="punctuation">.</span>log<span class="punctuation">(</span>n<span class="punctuation">)</span><span class="semi">;</span>
-<span class="punctuation">}</span></div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-times-circle"></i>
-</div>
-</div>
-<div id="GeneratorFunctionIteratorProtocol" class="showcase showcase_GeneratorFunctionIteratorProtocol">    <div class="title">Generators</div>
-    <div class="subtitle">Generator Function, Iterator Protocol</div>
-    <div class="desc">Support for generators, a special case of Iterators containing a
-generator function, where the control flow can be paused and resumed, in
-order to produce sequence of values (either finite or infinite).</div>
-<div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code"><span class="keyword">let</span> fibonacci<span class="punctuation"> = </span><span class="punctuation">{</span>
-    <span class="mark"><span class="punctuation">*</span><span class="punctuation">[</span>Symbol<span class="punctuation">.</span>iterator<span class="punctuation">]</span><span class="punctuation">(</span><span class="punctuation">)</span></span> <span class="punctuation">{</span>
-        <span class="keyword">let</span> pre<span class="punctuation"> = </span><span class="literal">0</span><span class="punctuation">,</span> cur<span class="punctuation"> = </span><span class="literal">1</span><span class="semi">;</span>
-        <span class="mark"><span class="keyword">for</span> <span class="punctuation">(</span><span class="punctuation">;</span><span class="punctuation">;</span><span class="punctuation">)</span></span> <span class="punctuation">{</span>
-            <span class="punctuation">[</span> pre<span class="punctuation">,</span> cur <span class="punctuation">]</span><span class="punctuation"> = </span><span class="punctuation">[</span> cur<span class="punctuation">,</span> pre <span class="punctuation">+</span> cur <span class="punctuation">]</span><span class="semi">;</span>
-            <span class="mark">yield cur</span><span class="semi">;</span>
-        <span class="punctuation">}</span>
-    <span class="punctuation">}</span>
-<span class="punctuation">}</span>
-
-<span class="keyword">for</span> <span class="punctuation">(</span><span class="mark"><span class="keyword">let</span> n <span class="keyword">of</span> fibonacci</span><span class="punctuation">)</span> <span class="punctuation">{</span>
-    <span class="keyword">if</span> <span class="punctuation">(</span>n <span class="punctuation">&gt;</span> <span class="literal">1000</span><span class="punctuation">)</span>
-        break<span class="semi">;</span>
-    console<span class="punctuation">.</span>log<span class="punctuation">(</span>n<span class="punctuation">)</span><span class="semi">;</span>
-<span class="punctuation">}</span>
-</div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-check-circle"></i>
-</div>
-    <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code"><span class="keyword">var</span> fibonacci<span class="punctuation"> = </span><span class="punctuation">{</span>
-    next: <span class="punctuation">(</span><span class="mark"><span class="keyword">function</span></span> <span class="punctuation">(</span><span class="punctuation">)</span> <span class="punctuation">{</span>
-        <span class="keyword">var</span> pre<span class="punctuation"> = </span><span class="literal">0</span><span class="punctuation">,</span> cur<span class="punctuation"> = </span><span class="literal">1</span><span class="semi">;</span>
-        <span class="keyword">return</span> <span class="keyword">function</span> <span class="punctuation">(</span><span class="punctuation">)</span> <span class="punctuation">{</span>
-            tmp<span class="punctuation"> = </span>pre<span class="semi">;</span>
-            pre<span class="punctuation"> = </span>cur<span class="semi">;</span>
-            cur <span class="punctuation">+</span>= tmp<span class="semi">;</span>
-            <span class="keyword">return</span> cur<span class="semi">;</span>
-        <span class="punctuation">}</span><span class="semi">;</span>
-    <span class="punctuation">}</span><span class="punctuation">)</span><span class="punctuation">(</span><span class="punctuation">)</span>
-<span class="punctuation">}</span><span class="semi">;</span>
-
-<span class="keyword">var</span> n<span class="semi">;</span>
-<span class="keyword">for</span> <span class="punctuation">(</span><span class="punctuation">;</span><span class="punctuation">;</span><span class="punctuation">)</span> <span class="punctuation">{</span>
-    n<span class="punctuation"> = </span>fibonacci<span class="mark"><span class="punctuation">.</span>next<span class="punctuation">(</span><span class="punctuation">)</span></span><span class="semi">;</span>
-    <span class="keyword">if</span> <span class="punctuation">(</span>n <span class="punctuation">&gt;</span> <span class="literal">1000</span><span class="punctuation">)</span>
-        break<span class="semi">;</span>
-    console<span class="punctuation">.</span>log<span class="punctuation">(</span>n<span class="punctuation">)</span><span class="semi">;</span>
-<span class="punctuation">}</span></div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-times-circle"></i>
-</div>
-</div>
-<div id="GeneratorFunctionDirectUse" class="showcase showcase_GeneratorFunctionDirectUse">    <div class="title">Generators</div>
-    <div class="subtitle">Generator Function, Direct Use</div>
-    <div class="desc">Support for generator functions, a special variant of functions where
-the control flow can be paused and resumed, in order to produce sequence
-of values (either finite or infinite).</div>
-<div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code"><span class="mark"><span class="keyword">function</span><span class="punctuation">*</span></span> range <span class="punctuation">(</span>start<span class="punctuation">,</span> end<span class="punctuation">,</span> step<span class="punctuation">)</span> <span class="punctuation">{</span>
-    <span class="keyword">while</span> <span class="punctuation">(</span>start <span class="punctuation">&lt;</span> end<span class="punctuation">)</span> <span class="punctuation">{</span>
-        <span class="mark">yield</span> start<span class="semi">;</span>
-        start <span class="punctuation">+</span>= step<span class="semi">;</span>
-    <span class="punctuation">}</span>
-<span class="punctuation">}</span>
-
-<span class="keyword">for</span> <span class="punctuation">(</span><span class="keyword">let</span> i <span class="mark"><span class="keyword">of</span></span> range<span class="punctuation">(</span><span class="literal">0</span><span class="punctuation">,</span> <span class="literal">10</span><span class="punctuation">,</span> <span class="literal">2</span><span class="punctuation">)</span><span class="punctuation">)</span> <span class="punctuation">{</span>
-    console<span class="punctuation">.</span>log<span class="punctuation">(</span>i<span class="punctuation">)</span><span class="semi">;</span><span class="comment"> // <span class="literal">0</span><span class="punctuation">,</span> <span class="literal">2</span><span class="punctuation">,</span> <span class="literal">4</span><span class="punctuation">,</span> <span class="literal">6</span><span class="punctuation">,</span> <span class="literal">8</span></span>
-<span class="punctuation">}</span>
-</div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-check-circle"></i>
-</div>
-    <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code"><span class="mark"><span class="keyword">function</span></span> range <span class="punctuation">(</span>start<span class="punctuation">,</span> end<span class="punctuation">,</span> step<span class="punctuation">)</span> <span class="punctuation">{</span>
-    <span class="mark"><span class="keyword">var</span> list<span class="punctuation"> = </span><span class="punctuation">[</span><span class="punctuation">]</span></span><span class="semi">;</span>
-    <span class="keyword">while</span> <span class="punctuation">(</span>start <span class="punctuation">&lt;</span> end<span class="punctuation">)</span> <span class="punctuation">{</span>
-        <span class="mark">list<span class="punctuation">.</span>push<span class="punctuation">(</span>start<span class="punctuation">)</span></span><span class="semi">;</span>
-        start <span class="punctuation">+</span>= step<span class="semi">;</span>
-    <span class="punctuation">}</span>
-    <span class="mark"><span class="keyword">return</span> list</span><span class="semi">;</span>
-<span class="punctuation">}</span>
-
-<span class="mark"><span class="keyword">var</span> r<span class="punctuation"> = </span>range<span class="punctuation">(</span><span class="literal">0</span><span class="punctuation">,</span> <span class="literal">10</span><span class="punctuation">,</span> <span class="literal">2</span><span class="punctuation">)</span></span><span class="semi">;</span>
-<span class="keyword">for</span> <span class="punctuation">(</span><span class="mark"><span class="keyword">var</span> i<span class="punctuation"> = </span><span class="literal">0</span><span class="punctuation">;</span> i <span class="punctuation">&lt;</span> r<span class="punctuation">.</span>length<span class="punctuation">;</span> i<span class="punctuation">+</span><span class="punctuation">+</span></span><span class="punctuation">)</span> <span class="punctuation">{</span>
-    console<span class="punctuation">.</span>log<span class="punctuation">(</span><span class="mark">r<span class="punctuation">[</span>i<span class="punctuation">]</span></span><span class="punctuation">)</span><span class="semi">;</span><span class="comment"> // <span class="literal">0</span><span class="punctuation">,</span> <span class="literal">2</span><span class="punctuation">,</span> <span class="literal">4</span><span class="punctuation">,</span> <span class="literal">6</span><span class="punctuation">,</span> <span class="literal">8</span></span>
-<span class="punctuation">}</span></div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-times-circle"></i>
-</div>
-</div>
-<div id="GeneratorMatching" class="showcase showcase_GeneratorMatching">    <div class="title">Generators</div>
-    <div class="subtitle">Generator Matching</div>
-    <div class="desc">Support for generator functions, i.e., functions where the control flow
-can be paused and resumed, in order to produce and spread sequence of
-values (either finite or infinite).</div>
-<div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code"><span class="keyword">let</span> fibonacci<span class="punctuation"> = </span><span class="mark"><span class="keyword">function</span><span class="punctuation">*</span></span> <span class="punctuation">(</span>numbers<span class="punctuation">)</span> <span class="punctuation">{</span>
-    <span class="keyword">let</span> pre<span class="punctuation"> = </span><span class="literal">0</span><span class="punctuation">,</span> cur<span class="punctuation"> = </span><span class="literal">1</span><span class="semi">;</span>
-    <span class="keyword">while</span> <span class="punctuation">(</span>numbers<span class="punctuation">-</span><span class="punctuation">-</span> <span class="punctuation">&gt;</span> <span class="literal">0</span><span class="punctuation">)</span> <span class="punctuation">{</span>
-        <span class="punctuation">[</span> pre<span class="punctuation">,</span> cur <span class="punctuation">]</span><span class="punctuation"> = </span><span class="punctuation">[</span> cur<span class="punctuation">,</span> pre <span class="punctuation">+</span> cur <span class="punctuation">]</span><span class="semi">;</span>
-        <span class="mark">yield cur</span><span class="semi">;</span>
-    <span class="punctuation">}</span>
-<span class="punctuation">}</span><span class="semi">;</span>
-
-<span class="keyword">for</span> <span class="punctuation">(</span><span class="mark"><span class="keyword">let</span> n <span class="keyword">of</span> fibonacci<span class="punctuation">(</span><span class="literal">1000</span><span class="punctuation">)</span></span><span class="punctuation">)</span>
-    console<span class="punctuation">.</span>log<span class="punctuation">(</span>n<span class="punctuation">)</span><span class="semi">;</span>
-
-<span class="keyword">let</span> numbers<span class="punctuation"> = </span><span class="punctuation">[</span> <span class="mark"><span class="punctuation">.</span><span class="punctuation">.</span><span class="punctuation">.</span>fibonacci<span class="punctuation">(</span><span class="literal">1000</span><span class="punctuation">)</span></span> <span class="punctuation">]</span><span class="semi">;</span>
-
-<span class="keyword">let</span> <span class="punctuation">[</span> n<span class="literal">1</span><span class="punctuation">,</span> n<span class="literal">2</span><span class="punctuation">,</span> n<span class="literal">3</span><span class="punctuation">,</span> <span class="punctuation">.</span><span class="punctuation">.</span><span class="punctuation">.</span>others <span class="punctuation">]</span><span class="punctuation"> = </span><span class="mark">fibonacci<span class="punctuation">(</span><span class="literal">1000</span><span class="punctuation">)</span></span><span class="semi">;</span>
-</div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-check-circle"></i>
-</div>
-    <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code"><span class="comment">//  no equivalent <span class="keyword">in</span> ES<span class="literal">5</span></span></div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-times-circle"></i>
-</div>
-</div>
-<div id="GeneratorControlFlow" class="showcase showcase_GeneratorControlFlow">    <div class="title">Generators</div>
-    <div class="subtitle">Generator Control-Flow</div>
-    <div class="desc">Support for generators, a special case of Iterators where the control
-flow can be paused and resumed, in order to support asynchronous
-programming in the style of "co-routines" in combination with Promises (see below).
-[Notice: the generic <code>async</code> function usually is provided by a reusable library
-and given here just for better understanding. See
-<a href="https://github.com/tj/co">co</a> or
-<a href="https://github.com/petkaantonov/bluebird/blob/master/API.md#promisecoroutinegeneratorfunction-generatorfunction---function">Bluebird</a>'s <code>coroutine</code> in practice.]</div>
-<div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code"><span class="comment">//  generic asynchronous control<span class="punctuation">-</span>flow driver</span>
-<span class="keyword">function</span> <span class="mark">async</span> <span class="punctuation">(</span>proc<span class="punctuation">,</span> <span class="punctuation">.</span><span class="punctuation">.</span><span class="punctuation">.</span>params<span class="punctuation">)</span> <span class="punctuation">{</span>
-    <span class="keyword">var</span> <span class="mark">iterator</span><span class="punctuation"> = </span><span class="mark">proc<span class="punctuation">(</span><span class="punctuation">.</span><span class="punctuation">.</span><span class="punctuation">.</span>params<span class="punctuation">)</span></span><span class="semi">;</span>
-    <span class="keyword">return</span> <span class="keyword">new</span> Promise<span class="punctuation">(</span><span class="punctuation">(</span>resolve<span class="punctuation">,</span> reject<span class="punctuation">)</span> <span class="punctuation">=&gt;</span> <span class="punctuation">{</span>
-        <span class="keyword">let</span> loop<span class="punctuation"> = </span><span class="punctuation">(</span>value<span class="punctuation">)</span> <span class="punctuation">=&gt;</span> <span class="punctuation">{</span>
-            <span class="keyword">let</span> result<span class="semi">;</span>
-            try <span class="punctuation">{</span>
-                result<span class="punctuation"> = </span><span class="mark">iterator<span class="punctuation">.</span>next</span><span class="punctuation">(</span>value<span class="punctuation">)</span><span class="semi">;</span>
-            <span class="punctuation">}</span>
-            catch <span class="punctuation">(</span>err<span class="punctuation">)</span> <span class="punctuation">{</span>
-                reject<span class="punctuation">(</span>err<span class="punctuation">)</span><span class="semi">;</span>
-            <span class="punctuation">}</span>
-            <span class="keyword">if</span> <span class="punctuation">(</span>result<span class="punctuation">.</span>done<span class="punctuation">)</span>
-                resolve<span class="punctuation">(</span>result<span class="punctuation">.</span>value<span class="punctuation">)</span><span class="semi">;</span>
-            else <span class="keyword">if</span> <span class="punctuation">(</span>   typeof result<span class="punctuation">.</span>value      <span class="punctuation">===</span> <span class="literal">"object"</span>
-                     <span class="punctuation"><span class="punctuation">&amp;</span></span><span class="punctuation"><span class="punctuation">&amp;</span></span> typeof result<span class="punctuation">.</span>value<span class="punctuation">.</span>then <span class="punctuation">===</span> <span class="literal">"<span class="keyword">function</span>"</span><span class="punctuation">)</span>
-                result<span class="punctuation">.</span>value<span class="punctuation">.</span>then<span class="punctuation">(</span><span class="punctuation">(</span>value<span class="punctuation">)</span> <span class="punctuation">=&gt;</span> <span class="punctuation">{</span>
-                    loop<span class="punctuation">(</span>value<span class="punctuation">)</span><span class="semi">;</span>
-                <span class="punctuation">}</span><span class="punctuation">,</span> <span class="punctuation">(</span>err<span class="punctuation">)</span> <span class="punctuation">=&gt;</span> <span class="punctuation">{</span>
-                    reject<span class="punctuation">(</span>err<span class="punctuation">)</span><span class="semi">;</span>
-                <span class="punctuation">}</span><span class="punctuation">)</span><span class="semi">;</span>
-            else
-                loop<span class="punctuation">(</span>result<span class="punctuation">.</span>value<span class="punctuation">)</span><span class="semi">;</span>
-        <span class="punctuation">}</span>
-        loop<span class="punctuation">(</span><span class="punctuation">)</span><span class="semi">;</span>
-    <span class="punctuation">}</span><span class="punctuation">)</span><span class="semi">;</span>
-<span class="punctuation">}</span>
-<span class="comment">
-//  application<span class="punctuation">-</span>specific asynchronous builder</span>
-<span class="keyword">function</span> makeAsync <span class="punctuation">(</span>text<span class="punctuation">,</span> after<span class="punctuation">)</span> <span class="punctuation">{</span>
-    <span class="keyword">return</span> <span class="keyword">new</span> Promise<span class="punctuation">(</span><span class="punctuation">(</span>resolve<span class="punctuation">,</span> reject<span class="punctuation">)</span> <span class="punctuation">=&gt;</span> <span class="punctuation">{</span>
-        setTimeout<span class="punctuation">(</span><span class="punctuation">(</span><span class="punctuation">)</span> <span class="punctuation">=&gt;</span> resolve<span class="punctuation">(</span>text<span class="punctuation">)</span><span class="punctuation">,</span> after<span class="punctuation">)</span><span class="semi">;</span>
-    <span class="punctuation">}</span><span class="punctuation">)</span><span class="semi">;</span>
-<span class="punctuation">}</span>
-<span class="comment">
-//  application<span class="punctuation">-</span>specific asynchronous procedure</span>
-<span class="mark">async</span><span class="punctuation">(</span><span class="mark"><span class="keyword">function</span><span class="punctuation">*</span></span> <span class="punctuation">(</span>greeting<span class="punctuation">)</span> <span class="punctuation">{</span>
-    <span class="keyword">let</span> foo<span class="punctuation"> = </span><span class="mark">yield</span> makeAsync<span class="punctuation">(</span><span class="literal">"foo"</span><span class="punctuation">,</span> <span class="literal">300</span><span class="punctuation">)</span>
-    <span class="keyword">let</span> bar<span class="punctuation"> = </span><span class="mark">yield</span> makeAsync<span class="punctuation">(</span><span class="literal">"bar"</span><span class="punctuation">,</span> <span class="literal">200</span><span class="punctuation">)</span>
-    <span class="keyword">let</span> baz<span class="punctuation"> = </span><span class="mark">yield</span> makeAsync<span class="punctuation">(</span><span class="literal">"baz"</span><span class="punctuation">,</span> <span class="literal">100</span><span class="punctuation">)</span>
-    <span class="keyword">return</span> <span class="literal">`$<span class="punctuation">{</span>greeting<span class="punctuation">}</span> $<span class="punctuation">{</span>foo<span class="punctuation">}</span> $<span class="punctuation">{</span>bar<span class="punctuation">}</span> $<span class="punctuation">{</span>baz<span class="punctuation">}</span>`</span>
-<span class="punctuation">}</span><span class="punctuation">,</span> <span class="literal">"Hello"</span><span class="punctuation">)</span><span class="punctuation">.</span>then<span class="punctuation">(</span><span class="punctuation">(</span>msg<span class="punctuation">)</span> <span class="punctuation">=&gt;</span> <span class="punctuation">{</span>
-    console<span class="punctuation">.</span>log<span class="punctuation">(</span><span class="literal">"RESULT:"</span><span class="punctuation">,</span> msg<span class="punctuation">)</span><span class="semi">;</span><span class="comment"> // <span class="literal">"Hello foo bar baz"</span></span>
-<span class="punctuation">}</span><span class="punctuation">)</span>
-</div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-check-circle"></i>
-</div>
-    <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code"><span class="comment">//  no equivalent <span class="keyword">in</span> ES<span class="literal">5</span></span></div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-times-circle"></i>
-</div>
-</div>
-<div id="GeneratorMethods" class="showcase showcase_GeneratorMethods">    <div class="title">Generators</div>
-    <div class="subtitle">Generator Methods</div>
-    <div class="desc">Support for generator methods, i.e., methods in classes and on objects,
-based on generator functions.</div>
-<div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code"><span class="keyword">class</span> Clz <span class="punctuation">{</span>
-    <span class="mark"><span class="punctuation">*</span> bar <span class="punctuation">(</span><span class="punctuation">)</span></span> <span class="punctuation">{</span>
-        <span class="ellipsis">&hellip;</span>
-    <span class="punctuation">}</span>
-<span class="punctuation">}</span><span class="semi">;</span>
-<span class="keyword">let</span> Obj<span class="punctuation"> = </span><span class="punctuation">{</span>
-    <span class="mark"><span class="punctuation">*</span> foo <span class="punctuation">(</span><span class="punctuation">)</span></span> <span class="punctuation">{</span>
-        <span class="ellipsis">&hellip;</span>
-    <span class="punctuation">}</span>
-<span class="punctuation">}</span><span class="semi">;</span>
-</div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-check-circle"></i>
-</div>
-    <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code"><span class="comment">//  no equivalent <span class="keyword">in</span> ES<span class="literal">5</span></span></div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-times-circle"></i>
-</div>
-</div>
-<div id="SetDataStructure" class="showcase showcase_SetDataStructure">    <div class="title">Map/Set & WeakMap/WeakSet</div>
-    <div class="subtitle">Set Data-Structure</div>
+<div id="SetDataStructure" class="showcase showcase_SetDataStructure">    <div class="title">Map/Set</div>
+    <div class="subtitle">Set Data-Structure (集合)</div>
     <div class="desc">Cleaner data-structure for common algorithms based on sets.</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
@@ -1580,8 +1205,8 @@ s<span class="punctuation">.</span><span class="mark">has<span class="punctuatio
     <i class="icon fa fa-times-circle"></i>
 </div>
 </div>
-<div id="MapDataStructure" class="showcase showcase_MapDataStructure">    <div class="title">Map/Set & WeakMap/WeakSet</div>
-    <div class="subtitle">Map Data-Structure</div>
+<div id="MapDataStructure" class="showcase showcase_MapDataStructure">    <div class="title">Map/Set</div>
+    <div class="subtitle">Map Data-Structure (字典)</div>
     <div class="desc">Cleaner data-structure for common algorithms based on maps.</div>
 <div class="js es6">
     <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
@@ -1615,91 +1240,7 @@ m<span class="punctuation">.</span><span class="mark">size</span> <span class="p
     <i class="icon fa fa-times-circle"></i>
 </div>
 </div>
-<div id="WeakLinkDataStructures" class="showcase showcase_WeakLinkDataStructures">    <div class="title">Map/Set & WeakMap/WeakSet</div>
-    <div class="subtitle">Weak-Link Data-Structures</div>
-    <div class="desc">Memory-leak-free Object-key’d side-by-side data-structures.</div>
-<div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code"><span class="keyword">let</span> isMarked    <span class="punctuation"> = </span><span class="keyword">new</span> <span class="mark">WeakSet</span><span class="punctuation">(</span><span class="punctuation">)</span><span class="semi">;</span>
-<span class="keyword">let</span> attachedData<span class="punctuation"> = </span><span class="keyword">new</span> <span class="mark">WeakMap</span><span class="punctuation">(</span><span class="punctuation">)</span><span class="semi">;</span>
-
-<span class="keyword">export</span> <span class="keyword">class</span> Node <span class="punctuation">{</span>
-    constructor <span class="punctuation">(</span>id<span class="punctuation">)</span>   <span class="punctuation">{</span> <span class="keyword">this</span><span class="punctuation">.</span>id<span class="punctuation"> = </span>id<span class="semi">;</span>                  <span class="punctuation">}</span>
-    mark        <span class="punctuation">(</span><span class="punctuation">)</span>     <span class="punctuation">{</span> <span class="mark">isMarked<span class="punctuation">.</span>add</span><span class="punctuation">(</span><span class="keyword">this</span><span class="punctuation">)</span><span class="semi">;</span>            <span class="punctuation">}</span>
-    unmark      <span class="punctuation">(</span><span class="punctuation">)</span>     <span class="punctuation">{</span> <span class="mark">isMarked<span class="punctuation">.</span>delete</span><span class="punctuation">(</span><span class="keyword">this</span><span class="punctuation">)</span><span class="semi">;</span>         <span class="punctuation">}</span>
-    marked      <span class="punctuation">(</span><span class="punctuation">)</span>     <span class="punctuation">{</span> <span class="keyword">return</span> <span class="mark">isMarked<span class="punctuation">.</span>has</span><span class="punctuation">(</span><span class="keyword">this</span><span class="punctuation">)</span><span class="semi">;</span>     <span class="punctuation">}</span>
-    set data    <span class="punctuation">(</span>data<span class="punctuation">)</span> <span class="punctuation">{</span> <span class="mark">attachedData<span class="punctuation">.</span>set</span><span class="punctuation">(</span><span class="keyword">this</span><span class="punctuation">,</span> data<span class="punctuation">)</span><span class="semi">;</span>  <span class="punctuation">}</span>
-    get data    <span class="punctuation">(</span><span class="punctuation">)</span>     <span class="punctuation">{</span> <span class="keyword">return</span> <span class="mark">attachedData<span class="punctuation">.</span>get</span><span class="punctuation">(</span><span class="keyword">this</span><span class="punctuation">)</span><span class="semi">;</span> <span class="punctuation">}</span>
-<span class="punctuation">}</span>
-
-<span class="keyword">let</span> foo<span class="punctuation"> = </span><span class="keyword">new</span> Node<span class="punctuation">(</span><span class="literal">"foo"</span><span class="punctuation">)</span><span class="semi">;</span>
-
-JSON<span class="punctuation">.</span>stringify<span class="punctuation">(</span>foo<span class="punctuation">)</span> <span class="punctuation">===</span> <span class="mark"><span class="literal">'<span class="punctuation">{</span>"id":"foo"<span class="punctuation">}</span>'</span></span><span class="semi">;</span>
-foo<span class="punctuation">.</span>mark<span class="punctuation">(</span><span class="punctuation">)</span><span class="semi">;</span>
-foo<span class="punctuation">.</span>data<span class="punctuation"> = </span><span class="literal">"bar"</span><span class="semi">;</span>
-foo<span class="punctuation">.</span>data <span class="punctuation">===</span> <span class="literal">"bar"</span><span class="semi">;</span>
-JSON<span class="punctuation">.</span>stringify<span class="punctuation">(</span>foo<span class="punctuation">)</span> <span class="punctuation">===</span> <span class="mark"><span class="literal">'<span class="punctuation">{</span>"id":"foo"<span class="punctuation">}</span>'</span></span><span class="semi">;</span>
-
-isMarked<span class="punctuation">.</span>has<span class="punctuation">(</span>foo<span class="punctuation">)</span>     <span class="punctuation">===</span> <span class="mark">true</span>
-attachedData<span class="punctuation">.</span>has<span class="punctuation">(</span>foo<span class="punctuation">)</span> <span class="punctuation">===</span> <span class="mark">true</span>
-foo <span class="mark">=</span> null  /<span class="punctuation">*</span> remove only reference to foo <span class="punctuation">*</span>/
-attachedData<span class="punctuation">.</span>has<span class="punctuation">(</span>foo<span class="punctuation">)</span> <span class="punctuation">===</span> <span class="mark">false</span>
-isMarked<span class="punctuation">.</span>has<span class="punctuation">(</span>foo<span class="punctuation">)</span>     <span class="punctuation">===</span> <span class="mark">false</span>
-</div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-check-circle"></i>
-</div>
-    <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code"><span class="comment">// no equivalent <span class="keyword">in</span> ES<span class="literal">5</span></span></div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-times-circle"></i>
-</div>
-</div>
-<div id="TypedArrays" class="showcase showcase_TypedArrays">    <div class="title">Typed Arrays</div>
-    <div class="subtitle">Typed Arrays</div>
-    <div class="desc">Support for arbitrary byte-based data structures to implement network
-protocols, cryptography algorithms, file format manipulations, etc.</div>
-<div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code"><span class="comment">//  ES<span class="literal">6</span> <span class="keyword">class</span> equivalent to the following C structure:</span><span class="comment">
-//  struct Example <span class="punctuation">{</span> unsigned long id<span class="punctuation">;</span> char username<span class="punctuation">[</span><span class="literal">16</span><span class="punctuation">]</span><span class="punctuation">;</span> float amountDue<span class="semi">;</span> <span class="punctuation">}</span><span class="semi">;</span></span>
-<span class="keyword">class</span> Example <span class="punctuation">{</span>
-    constructor <span class="punctuation">(</span>buffer<span class="punctuation"> = </span><span class="mark"><span class="keyword">new</span> ArrayBuffer<span class="punctuation">(</span><span class="literal">24</span><span class="punctuation">)</span></span><span class="punctuation">)</span> <span class="punctuation">{</span>
-        <span class="keyword">this</span><span class="punctuation">.</span>buffer<span class="punctuation"> = </span>buffer<span class="semi">;</span>
-    <span class="punctuation">}</span>
-    set buffer <span class="punctuation">(</span>buffer<span class="punctuation">)</span> <span class="punctuation">{</span>
-        <span class="keyword">this</span><span class="punctuation">.</span>_buffer   <span class="punctuation"> = </span>buffer<span class="semi">;</span>
-        <span class="keyword">this</span><span class="punctuation">.</span>_id       <span class="punctuation"> = </span><span class="mark"><span class="keyword">new</span> Uint<span class="literal">32</span>Array <span class="punctuation">(</span><span class="keyword">this</span><span class="punctuation">.</span>_buffer<span class="punctuation">,</span>  <span class="literal">0</span><span class="punctuation">,</span>  <span class="literal">1</span><span class="punctuation">)</span></span><span class="semi">;</span>
-        <span class="keyword">this</span><span class="punctuation">.</span>_username <span class="punctuation"> = </span><span class="mark"><span class="keyword">new</span> Uint<span class="literal">8</span>Array  <span class="punctuation">(</span><span class="keyword">this</span><span class="punctuation">.</span>_buffer<span class="punctuation">,</span>  <span class="literal">4</span><span class="punctuation">,</span> <span class="literal">16</span><span class="punctuation">)</span></span><span class="semi">;</span>
-        <span class="keyword">this</span><span class="punctuation">.</span>_amountDue<span class="punctuation"> = </span><span class="mark"><span class="keyword">new</span> Float<span class="literal">32</span>Array<span class="punctuation">(</span><span class="keyword">this</span><span class="punctuation">.</span>_buffer<span class="punctuation">,</span> <span class="literal">20</span><span class="punctuation">,</span>  <span class="literal">1</span><span class="punctuation">)</span></span><span class="semi">;</span>
-    <span class="punctuation">}</span>
-    get buffer <span class="punctuation">(</span><span class="punctuation">)</span>     <span class="punctuation">{</span> <span class="keyword">return</span> <span class="keyword">this</span><span class="punctuation">.</span>_buffer<span class="semi">;</span>       <span class="punctuation">}</span>
-    set id <span class="punctuation">(</span>v<span class="punctuation">)</span>        <span class="punctuation">{</span> <span class="keyword">this</span><span class="punctuation">.</span>_id<span class="punctuation">[</span><span class="literal">0</span><span class="punctuation">]</span><span class="punctuation"> = </span>v<span class="semi">;</span>           <span class="punctuation">}</span>
-    get id <span class="punctuation">(</span><span class="punctuation">)</span>         <span class="punctuation">{</span> <span class="keyword">return</span> <span class="keyword">this</span><span class="punctuation">.</span>_id<span class="punctuation">[</span><span class="literal">0</span><span class="punctuation">]</span><span class="semi">;</span>        <span class="punctuation">}</span>
-    set username <span class="punctuation">(</span>v<span class="punctuation">)</span>  <span class="punctuation">{</span> <span class="keyword">this</span><span class="punctuation">.</span>_username<span class="punctuation">[</span><span class="literal">0</span><span class="punctuation">]</span><span class="punctuation"> = </span>v<span class="semi">;</span>     <span class="punctuation">}</span>
-    get username <span class="punctuation">(</span><span class="punctuation">)</span>   <span class="punctuation">{</span> <span class="keyword">return</span> <span class="keyword">this</span><span class="punctuation">.</span>_username<span class="punctuation">[</span><span class="literal">0</span><span class="punctuation">]</span><span class="semi">;</span>  <span class="punctuation">}</span>
-    set amountDue <span class="punctuation">(</span>v<span class="punctuation">)</span> <span class="punctuation">{</span> <span class="keyword">this</span><span class="punctuation">.</span>_amountDue<span class="punctuation">[</span><span class="literal">0</span><span class="punctuation">]</span><span class="punctuation"> = </span>v<span class="semi">;</span>    <span class="punctuation">}</span>
-    get amountDue <span class="punctuation">(</span><span class="punctuation">)</span>  <span class="punctuation">{</span> <span class="keyword">return</span> <span class="keyword">this</span><span class="punctuation">.</span>_amountDue<span class="punctuation">[</span><span class="literal">0</span><span class="punctuation">]</span><span class="semi">;</span> <span class="punctuation">}</span>
-<span class="punctuation">}</span>
-
-<span class="keyword">let</span> example<span class="punctuation"> = </span><span class="keyword">new</span> Example<span class="punctuation">(</span><span class="punctuation">)</span>
-example<span class="punctuation">.</span><span class="mark">id</span><span class="punctuation"> = </span><span class="literal">7</span>
-example<span class="punctuation">.</span><span class="mark">username</span><span class="punctuation"> = </span><span class="literal">"John Doe"</span>
-example<span class="punctuation">.</span><span class="mark">amountDue</span><span class="punctuation"> = </span><span class="literal">42</span><span class="punctuation">.</span><span class="literal">0</span>
-</div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-check-circle"></i>
-</div>
-    <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code"><span class="comment">//  no equivalent <span class="keyword">in</span> ES<span class="literal">5</span></span><span class="comment">
-//  <span class="punctuation">(</span>only an equivalent <span class="keyword">in</span> HTML<span class="literal">5</span><span class="punctuation">)</span></span></div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-times-circle"></i>
-</div>
-</div>
-<div id="ObjectPropertyAssignment" class="showcase showcase_ObjectPropertyAssignment">    <div class="title">New Built-In Methods</div>
+<div id="ObjectPropertyAssignment" class="showcase showcase_ObjectPropertyAssignment">    <div class="title">New Built-In Methods (新增内建方法)</div>
     <div class="subtitle">Object Property Assignment</div>
     <div class="desc">New function for assigning enumerable properties of one or more source
 objects onto a destination object.</div>
@@ -1736,7 +1277,7 @@ dst<span class="punctuation">.</span>baz  <span class="punctuation">===</span> <
     <i class="icon fa fa-times-circle"></i>
 </div>
 </div>
-<div id="ArrayElementFinding" class="showcase showcase_ArrayElementFinding">    <div class="title">New Built-In Methods</div>
+<div id="ArrayElementFinding" class="showcase showcase_ArrayElementFinding">    <div class="title">New Built-In Methods (新增内建方法)</div>
     <div class="subtitle">Array Element Finding</div>
     <div class="desc">New function for finding an element in an array.</div>
 <div class="js es6">
@@ -1755,7 +1296,7 @@ dst<span class="punctuation">.</span>baz  <span class="punctuation">===</span> <
     <i class="icon fa fa-times-circle"></i>
 </div>
 </div>
-<div id="StringRepeating" class="showcase showcase_StringRepeating">    <div class="title">New Built-In Methods</div>
+<div id="StringRepeating" class="showcase showcase_StringRepeating">    <div class="title">New Built-In Methods (新增内建方法)</div>
     <div class="subtitle">String Repeating</div>
     <div class="desc">New string repeating functionality.</div>
 <div class="js es6">
@@ -1774,7 +1315,7 @@ dst<span class="punctuation">.</span>baz  <span class="punctuation">===</span> <
     <i class="icon fa fa-times-circle"></i>
 </div>
 </div>
-<div id="StringSearching" class="showcase showcase_StringSearching">    <div class="title">New Built-In Methods</div>
+<div id="StringSearching" class="showcase showcase_StringSearching">    <div class="title">New Built-In Methods (新增内建方法)</div>
     <div class="subtitle">String Searching</div>
     <div class="desc">New specific string functions to search for a sub-string.</div>
 <div class="js es6">
@@ -1795,238 +1336,6 @@ dst<span class="punctuation">.</span>baz  <span class="punctuation">===</span> <
 <span class="literal">"hello"</span><span class="punctuation">.</span><span class="mark">indexOf</span><span class="punctuation">(</span><span class="literal">"ell"</span><span class="punctuation">)</span> !== <span class="punctuation">-</span><span class="literal">1</span><span class="semi">;</span>   <span class="comment"> // true</span>
 <span class="literal">"hello"</span><span class="punctuation">.</span><span class="mark">indexOf</span><span class="punctuation">(</span><span class="literal">"ell"</span><span class="punctuation">,</span> <span class="literal">1</span><span class="punctuation">)</span> !== <span class="punctuation">-</span><span class="literal">1</span><span class="semi">;</span><span class="comment"> // true</span>
 <span class="literal">"hello"</span><span class="punctuation">.</span><span class="mark">indexOf</span><span class="punctuation">(</span><span class="literal">"ell"</span><span class="punctuation">,</span> <span class="literal">2</span><span class="punctuation">)</span> !== <span class="punctuation">-</span><span class="literal">1</span><span class="semi">;</span><span class="comment"> // false</span></div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-times-circle"></i>
-</div>
-</div>
-<div id="NumberTypeChecking" class="showcase showcase_NumberTypeChecking">    <div class="title">New Built-In Methods</div>
-    <div class="subtitle">Number Type Checking</div>
-    <div class="desc">New functions for checking for non-numbers and finite numbers.</div>
-<div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code">Number<span class="punctuation">.</span><span class="mark">isNaN</span><span class="punctuation">(</span><span class="literal">42</span><span class="punctuation">)</span> <span class="punctuation">===</span> false<span class="semi">;</span>
-Number<span class="punctuation">.</span><span class="mark">isNaN</span><span class="punctuation">(</span>NaN<span class="punctuation">)</span> <span class="punctuation">===</span> true<span class="semi">;</span>
-
-Number<span class="punctuation">.</span><span class="mark">isFinite</span><span class="punctuation">(</span>Infinity<span class="punctuation">)</span> <span class="punctuation">===</span> false<span class="semi">;</span>
-Number<span class="punctuation">.</span><span class="mark">isFinite</span><span class="punctuation">(</span><span class="punctuation">-</span>Infinity<span class="punctuation">)</span> <span class="punctuation">===</span> false<span class="semi">;</span>
-Number<span class="punctuation">.</span><span class="mark">isFinite</span><span class="punctuation">(</span>NaN<span class="punctuation">)</span> <span class="punctuation">===</span> false<span class="semi">;</span>
-Number<span class="punctuation">.</span><span class="mark">isFinite</span><span class="punctuation">(</span><span class="literal">123</span><span class="punctuation">)</span> <span class="punctuation">===</span> true<span class="semi">;</span>
-</div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-check-circle"></i>
-</div>
-    <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code"><span class="keyword">var</span> <span class="mark">isNaN</span><span class="punctuation"> = </span><span class="keyword">function</span> <span class="punctuation">(</span>n<span class="punctuation">)</span> <span class="punctuation">{</span>
-    <span class="keyword">return</span> <span class="mark">n !== n</span><span class="semi">;</span>
-<span class="punctuation">}</span><span class="semi">;</span>
-<span class="keyword">var</span> <span class="mark">isFinite</span><span class="punctuation"> = </span><span class="keyword">function</span> <span class="punctuation">(</span>v<span class="punctuation">)</span> <span class="punctuation">{</span>
-    <span class="keyword">return</span> <span class="mark"><span class="punctuation">(</span>typeof v <span class="punctuation">===</span> <span class="literal">"number"</span> <span class="punctuation"><span class="punctuation">&amp;</span></span><span class="punctuation"><span class="punctuation">&amp;</span></span> !isNaN<span class="punctuation">(</span>v<span class="punctuation">)</span> <span class="punctuation"><span class="punctuation">&amp;</span></span><span class="punctuation"><span class="punctuation">&amp;</span></span> v !== Infinity <span class="punctuation"><span class="punctuation">&amp;</span></span><span class="punctuation"><span class="punctuation">&amp;</span></span> v !== <span class="punctuation">-</span>Infinity<span class="punctuation">)</span></span><span class="semi">;</span>
-<span class="punctuation">}</span><span class="semi">;</span>
-isNaN<span class="punctuation">(</span><span class="literal">42</span><span class="punctuation">)</span> <span class="punctuation">===</span> false<span class="semi">;</span>
-isNaN<span class="punctuation">(</span>NaN<span class="punctuation">)</span> <span class="punctuation">===</span> true<span class="semi">;</span>
-
-isFinite<span class="punctuation">(</span>Infinity<span class="punctuation">)</span> <span class="punctuation">===</span> false<span class="semi">;</span>
-isFinite<span class="punctuation">(</span><span class="punctuation">-</span>Infinity<span class="punctuation">)</span> <span class="punctuation">===</span> false<span class="semi">;</span>
-isFinite<span class="punctuation">(</span>NaN<span class="punctuation">)</span> <span class="punctuation">===</span> false<span class="semi">;</span>
-isFinite<span class="punctuation">(</span><span class="literal">123</span><span class="punctuation">)</span> <span class="punctuation">===</span> true<span class="semi">;</span></div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-times-circle"></i>
-</div>
-</div>
-<div id="NumberSafetyChecking" class="showcase showcase_NumberSafetyChecking">    <div class="title">New Built-In Methods</div>
-    <div class="subtitle">Number Safety Checking</div>
-    <div class="desc">Checking whether an integer number is in the safe range, i.e., it is
-correctly represented by JavaScript (where all numbers, including
-integer numbers, are technically floating point number).</div>
-<div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code">Number<span class="punctuation">.</span><span class="mark">isSafeInteger</span><span class="punctuation">(</span><span class="literal">42</span><span class="punctuation">)</span> <span class="punctuation">===</span> true<span class="semi">;</span>
-Number<span class="punctuation">.</span><span class="mark">isSafeInteger</span><span class="punctuation">(</span><span class="literal">9007199254740992</span><span class="punctuation">)</span> <span class="punctuation">===</span> false<span class="semi">;</span>
-</div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-check-circle"></i>
-</div>
-    <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code"><span class="keyword">function</span> isSafeInteger <span class="punctuation">(</span>n<span class="punctuation">)</span> <span class="punctuation">{</span>
-    <span class="keyword">return</span> <span class="punctuation">(</span>
-           typeof n <span class="punctuation">===</span> <span class="literal">'number'</span>
-        <span class="punctuation"><span class="punctuation">&amp;</span></span><span class="punctuation"><span class="punctuation">&amp;</span></span> Math<span class="punctuation">.</span>round<span class="punctuation">(</span>n<span class="punctuation">)</span> <span class="punctuation">===</span> n
-        <span class="punctuation"><span class="punctuation">&amp;</span></span><span class="punctuation"><span class="punctuation">&amp;</span></span> <span class="punctuation">-</span><span class="punctuation">(</span>Math<span class="punctuation">.</span>pow<span class="punctuation">(</span><span class="literal">2</span><span class="punctuation">,</span> <span class="literal">53</span><span class="punctuation">)</span> <span class="punctuation">-</span> <span class="literal">1</span><span class="punctuation">)</span> <span class="punctuation">&lt;</span>= n
-        <span class="punctuation"><span class="punctuation">&amp;</span></span><span class="punctuation"><span class="punctuation">&amp;</span></span> n <span class="punctuation">&lt;</span>= <span class="punctuation">(</span>Math<span class="punctuation">.</span>pow<span class="punctuation">(</span><span class="literal">2</span><span class="punctuation">,</span> <span class="literal">53</span><span class="punctuation">)</span> <span class="punctuation">-</span> <span class="literal">1</span><span class="punctuation">)</span>
-    <span class="punctuation">)</span><span class="semi">;</span>
-<span class="punctuation">}</span>
-<span class="mark">isSafeInteger</span><span class="punctuation">(</span><span class="literal">42</span><span class="punctuation">)</span> <span class="punctuation">===</span> true<span class="semi">;</span>
-<span class="mark">isSafeInteger</span><span class="punctuation">(</span><span class="literal">9007199254740992</span><span class="punctuation">)</span> <span class="punctuation">===</span> false<span class="semi">;</span></div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-times-circle"></i>
-</div>
-</div>
-<div id="NumberComparison" class="showcase showcase_NumberComparison">    <div class="title">New Built-In Methods</div>
-    <div class="subtitle">Number Comparison</div>
-    <div class="desc">Availability of a standard Epsilon value for more precise comparison of
-floating point numbers.</div>
-<div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code">console<span class="punctuation">.</span>log<span class="punctuation">(</span><span class="literal">0</span><span class="punctuation">.</span><span class="literal">1</span> <span class="punctuation">+</span> <span class="literal">0</span><span class="punctuation">.</span><span class="literal">2</span> <span class="punctuation">===</span> <span class="literal">0</span><span class="punctuation">.</span><span class="literal">3</span><span class="punctuation">)</span><span class="semi">;</span><span class="comment"> // false</span>
-console<span class="punctuation">.</span>log<span class="punctuation">(</span>Math<span class="punctuation">.</span>abs<span class="punctuation">(</span><span class="punctuation">(</span><span class="literal">0</span><span class="punctuation">.</span><span class="literal">1</span> <span class="punctuation">+</span> <span class="literal">0</span><span class="punctuation">.</span><span class="literal">2</span><span class="punctuation">)</span> <span class="punctuation">-</span> <span class="literal">0</span><span class="punctuation">.</span><span class="literal">3</span><span class="punctuation">)</span> <span class="punctuation">&lt;</span> <span class="mark">Number<span class="punctuation">.</span>EPSILON</span><span class="punctuation">)</span><span class="semi">;</span><span class="comment"> // true</span>
-</div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-check-circle"></i>
-</div>
-    <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code">console<span class="punctuation">.</span>log<span class="punctuation">(</span><span class="literal">0</span><span class="punctuation">.</span><span class="literal">1</span> <span class="punctuation">+</span> <span class="literal">0</span><span class="punctuation">.</span><span class="literal">2</span> <span class="punctuation">===</span> <span class="literal">0</span><span class="punctuation">.</span><span class="literal">3</span><span class="punctuation">)</span><span class="semi">;</span><span class="comment"> // false</span>
-console<span class="punctuation">.</span>log<span class="punctuation">(</span>Math<span class="punctuation">.</span>abs<span class="punctuation">(</span><span class="punctuation">(</span><span class="literal">0</span><span class="punctuation">.</span><span class="literal">1</span> <span class="punctuation">+</span> <span class="literal">0</span><span class="punctuation">.</span><span class="literal">2</span><span class="punctuation">)</span> <span class="punctuation">-</span> <span class="literal">0</span><span class="punctuation">.</span><span class="literal">3</span><span class="punctuation">)</span> <span class="punctuation">&lt;</span> <span class="mark"><span class="literal">2</span><span class="punctuation">.</span><span class="literal">220446049250313</span>e<span class="punctuation">-</span><span class="literal">16</span></span><span class="punctuation">)</span><span class="semi">;</span><span class="comment"> // true</span></div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-times-circle"></i>
-</div>
-</div>
-<div id="NumberTruncation" class="showcase showcase_NumberTruncation">    <div class="title">New Built-In Methods</div>
-    <div class="subtitle">Number Truncation</div>
-    <div class="desc">Truncate a floating point number to its integral part,
-completely dropping the fractional part.</div>
-<div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code">console<span class="punctuation">.</span>log<span class="punctuation">(</span><span class="mark">Math<span class="punctuation">.</span>trunc</span><span class="punctuation">(</span><span class="literal">42</span><span class="punctuation">.</span><span class="literal">7</span><span class="punctuation">)</span><span class="punctuation">)</span><span class="comment"> // <span class="literal">42</span></span>
-console<span class="punctuation">.</span>log<span class="punctuation">(</span><span class="mark">Math<span class="punctuation">.</span>trunc</span><span class="punctuation">(</span> <span class="literal">0</span><span class="punctuation">.</span><span class="literal">1</span><span class="punctuation">)</span><span class="punctuation">)</span><span class="comment"> // <span class="literal">0</span></span>
-console<span class="punctuation">.</span>log<span class="punctuation">(</span><span class="mark">Math<span class="punctuation">.</span>trunc</span><span class="punctuation">(</span><span class="punctuation">-</span><span class="literal">0</span><span class="punctuation">.</span><span class="literal">1</span><span class="punctuation">)</span><span class="punctuation">)</span><span class="comment"> // <span class="punctuation">-</span><span class="literal">0</span></span>
-</div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-check-circle"></i>
-</div>
-    <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code"><span class="keyword">function</span> mathTrunc <span class="punctuation">(</span>x<span class="punctuation">)</span> <span class="punctuation">{</span>
-    <span class="keyword">return</span> <span class="mark"><span class="punctuation">(</span>x <span class="punctuation">&lt;</span> <span class="literal">0</span> ? Math<span class="punctuation">.</span>ceil<span class="punctuation">(</span>x<span class="punctuation">)</span> : Math<span class="punctuation">.</span>floor<span class="punctuation">(</span>x<span class="punctuation">)</span><span class="punctuation">)</span></span><span class="semi">;</span>
-<span class="punctuation">}</span>
-console<span class="punctuation">.</span>log<span class="punctuation">(</span>mathTrunc<span class="punctuation">(</span><span class="literal">42</span><span class="punctuation">.</span><span class="literal">7</span><span class="punctuation">)</span><span class="punctuation">)</span><span class="comment"> // <span class="literal">42</span></span>
-console<span class="punctuation">.</span>log<span class="punctuation">(</span>mathTrunc<span class="punctuation">(</span> <span class="literal">0</span><span class="punctuation">.</span><span class="literal">1</span><span class="punctuation">)</span><span class="punctuation">)</span><span class="comment"> // <span class="literal">0</span></span>
-console<span class="punctuation">.</span>log<span class="punctuation">(</span>mathTrunc<span class="punctuation">(</span><span class="punctuation">-</span><span class="literal">0</span><span class="punctuation">.</span><span class="literal">1</span><span class="punctuation">)</span><span class="punctuation">)</span><span class="comment"> // <span class="punctuation">-</span><span class="literal">0</span></span></div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-times-circle"></i>
-</div>
-</div>
-<div id="NumberSignDetermination" class="showcase showcase_NumberSignDetermination">    <div class="title">New Built-In Methods</div>
-    <div class="subtitle">Number Sign Determination</div>
-    <div class="desc">Determine the sign of a number, including special cases of signed zero and non-number.</div>
-<div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code">console<span class="punctuation">.</span>log<span class="punctuation">(</span><span class="mark">Math<span class="punctuation">.</span>sign</span><span class="punctuation">(</span><span class="literal">7</span><span class="punctuation">)</span><span class="punctuation">)</span>  <span class="comment"> // <span class="literal">1</span></span>
-console<span class="punctuation">.</span>log<span class="punctuation">(</span><span class="mark">Math<span class="punctuation">.</span>sign</span><span class="punctuation">(</span><span class="literal">0</span><span class="punctuation">)</span><span class="punctuation">)</span>  <span class="comment"> // <span class="literal">0</span></span>
-console<span class="punctuation">.</span>log<span class="punctuation">(</span><span class="mark">Math<span class="punctuation">.</span>sign</span><span class="punctuation">(</span><span class="punctuation">-</span><span class="literal">0</span><span class="punctuation">)</span><span class="punctuation">)</span> <span class="comment"> // <span class="punctuation">-</span><span class="literal">0</span></span>
-console<span class="punctuation">.</span>log<span class="punctuation">(</span><span class="mark">Math<span class="punctuation">.</span>sign</span><span class="punctuation">(</span><span class="punctuation">-</span><span class="literal">7</span><span class="punctuation">)</span><span class="punctuation">)</span> <span class="comment"> // <span class="punctuation">-</span><span class="literal">1</span></span>
-console<span class="punctuation">.</span>log<span class="punctuation">(</span><span class="mark">Math<span class="punctuation">.</span>sign</span><span class="punctuation">(</span>NaN<span class="punctuation">)</span><span class="punctuation">)</span><span class="comment"> // NaN</span>
-</div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-check-circle"></i>
-</div>
-    <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code"><span class="keyword">function</span> <span class="mark">mathSign</span> <span class="punctuation">(</span>x<span class="punctuation">)</span> <span class="punctuation">{</span>
-    <span class="keyword">return</span> <span class="mark"><span class="punctuation">(</span><span class="punctuation">(</span>x <span class="punctuation">===</span> <span class="literal">0</span> &#124;&#124; isNaN<span class="punctuation">(</span>x<span class="punctuation">)</span><span class="punctuation">)</span> ? x : <span class="punctuation">(</span>x <span class="punctuation">&gt;</span> <span class="literal">0</span> ? <span class="literal">1</span> : <span class="punctuation">-</span><span class="literal">1</span><span class="punctuation">)</span><span class="punctuation">)</span></span><span class="semi">;</span>
-<span class="punctuation">}</span>
-console<span class="punctuation">.</span>log<span class="punctuation">(</span>mathSign<span class="punctuation">(</span><span class="literal">7</span><span class="punctuation">)</span><span class="punctuation">)</span>  <span class="comment"> // <span class="literal">1</span></span>
-console<span class="punctuation">.</span>log<span class="punctuation">(</span>mathSign<span class="punctuation">(</span><span class="literal">0</span><span class="punctuation">)</span><span class="punctuation">)</span>  <span class="comment"> // <span class="literal">0</span></span>
-console<span class="punctuation">.</span>log<span class="punctuation">(</span>mathSign<span class="punctuation">(</span><span class="punctuation">-</span><span class="literal">0</span><span class="punctuation">)</span><span class="punctuation">)</span> <span class="comment"> // <span class="punctuation">-</span><span class="literal">0</span></span>
-console<span class="punctuation">.</span>log<span class="punctuation">(</span>mathSign<span class="punctuation">(</span><span class="punctuation">-</span><span class="literal">7</span><span class="punctuation">)</span><span class="punctuation">)</span> <span class="comment"> // <span class="punctuation">-</span><span class="literal">1</span></span>
-console<span class="punctuation">.</span>log<span class="punctuation">(</span>mathSign<span class="punctuation">(</span>NaN<span class="punctuation">)</span><span class="punctuation">)</span><span class="comment"> // NaN</span></div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-times-circle"></i>
-</div>
-</div>
-<div id="PromiseUsage" class="showcase showcase_PromiseUsage">    <div class="title">Promises</div>
-    <div class="subtitle">Promise Usage</div>
-    <div class="desc">First class representation of a value that may be made asynchronously and be available in the future.</div>
-<div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code"><span class="keyword">function</span> msgAfterTimeout <span class="punctuation">(</span>msg<span class="punctuation">,</span> who<span class="punctuation">,</span> timeout<span class="punctuation">)</span> <span class="punctuation">{</span>
-    <span class="keyword">return</span> <span class="mark"><span class="keyword">new</span> Promise</span><span class="punctuation">(</span><span class="punctuation">(</span><span class="mark">resolve</span><span class="punctuation">,</span> reject<span class="punctuation">)</span> <span class="punctuation">=&gt;</span> <span class="punctuation">{</span>
-        setTimeout<span class="punctuation">(</span><span class="punctuation">(</span><span class="punctuation">)</span> <span class="punctuation">=&gt;</span> <span class="mark">resolve</span><span class="punctuation">(</span><span class="literal">`$<span class="punctuation">{</span>msg<span class="punctuation">}</span> Hello $<span class="punctuation">{</span>who<span class="punctuation">}</span>!`</span><span class="punctuation">)</span><span class="punctuation">,</span> timeout<span class="punctuation">)</span><span class="semi">;</span>
-    <span class="punctuation">}</span><span class="punctuation">)</span><span class="semi">;</span>
-<span class="punctuation">}</span>
-msgAfterTimeout<span class="punctuation">(</span><span class="literal">""</span><span class="punctuation">,</span> <span class="literal">"Foo"</span><span class="punctuation">,</span> <span class="literal">100</span><span class="punctuation">)</span><span class="punctuation">.</span><span class="mark">then</span><span class="punctuation">(</span><span class="punctuation">(</span>msg<span class="punctuation">)</span> <span class="punctuation">=&gt;</span>
-    msgAfterTimeout<span class="punctuation">(</span>msg<span class="punctuation">,</span> <span class="literal">"Bar"</span><span class="punctuation">,</span> <span class="literal">200</span><span class="punctuation">)</span>
-<span class="punctuation">)</span><span class="punctuation">.</span><span class="mark">then</span><span class="punctuation">(</span><span class="punctuation">(</span>msg<span class="punctuation">)</span> <span class="punctuation">=&gt;</span> <span class="punctuation">{</span>
-    console<span class="punctuation">.</span>log<span class="punctuation">(</span><span class="literal">`done after 300ms:$<span class="punctuation">{</span>msg<span class="punctuation">}</span>`</span><span class="punctuation">)</span><span class="semi">;</span>
-<span class="punctuation">}</span><span class="punctuation">)</span><span class="semi">;</span>
-</div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-check-circle"></i>
-</div>
-    <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code"><span class="keyword">function</span> msgAfterTimeout <span class="punctuation">(</span>msg<span class="punctuation">,</span> who<span class="punctuation">,</span> timeout<span class="punctuation">,</span> <span class="mark">onDone</span><span class="punctuation">)</span> <span class="punctuation">{</span>
-    setTimeout<span class="punctuation">(</span><span class="keyword">function</span> <span class="punctuation">(</span><span class="punctuation">)</span> <span class="punctuation">{</span>
-        <span class="mark">onDone</span><span class="punctuation">(</span>msg <span class="punctuation">+</span> <span class="literal">" Hello "</span> <span class="punctuation">+</span> who <span class="punctuation">+</span> <span class="literal">"!"</span><span class="punctuation">)</span><span class="semi">;</span>
-    <span class="punctuation">}</span><span class="punctuation">,</span> timeout<span class="punctuation">)</span><span class="semi">;</span>
-<span class="punctuation">}</span>
-msgAfterTimeout<span class="punctuation">(</span><span class="literal">""</span><span class="punctuation">,</span> <span class="literal">"Foo"</span><span class="punctuation">,</span> <span class="literal">100</span><span class="mark"><span class="punctuation">,</span> <span class="keyword">function</span></span> <span class="punctuation">(</span>msg<span class="punctuation">)</span> <span class="punctuation">{</span>
-    msgAfterTimeout<span class="punctuation">(</span>msg<span class="punctuation">,</span> <span class="literal">"Bar"</span><span class="punctuation">,</span> <span class="literal">200</span><span class="mark"><span class="punctuation">,</span> <span class="keyword">function</span></span> <span class="punctuation">(</span>msg<span class="punctuation">)</span> <span class="punctuation">{</span>
-        console<span class="punctuation">.</span>log<span class="punctuation">(</span><span class="literal">"done after 300ms:"</span> <span class="punctuation">+</span> msg<span class="punctuation">)</span><span class="semi">;</span>
-    <span class="punctuation">}</span><span class="punctuation">)</span><span class="semi">;</span>
-<span class="punctuation">}</span><span class="punctuation">)</span><span class="semi">;</span></div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-times-circle"></i>
-</div>
-</div>
-<div id="PromiseCombination" class="showcase showcase_PromiseCombination">    <div class="title">Promises</div>
-    <div class="subtitle">Promise Combination</div>
-    <div class="desc">Combine one or more promises into new promises without having to take
-care of ordering of the underlying asynchronous operations yourself.</div>
-<div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code"><span class="keyword">function</span> fetchAsync <span class="punctuation">(</span>url<span class="punctuation">,</span> timeout<span class="punctuation">,</span> onData<span class="punctuation">,</span> onError<span class="punctuation">)</span> <span class="punctuation">{</span>
-    <span class="ellipsis">&hellip;</span>
-<span class="punctuation">}</span>
-<span class="keyword">let</span> fetchPromised<span class="punctuation"> = </span><span class="punctuation">(</span>url<span class="punctuation">,</span> timeout<span class="punctuation">)</span> <span class="punctuation">=&gt;</span> <span class="punctuation">{</span>
-    <span class="keyword">return</span> <span class="mark"><span class="keyword">new</span> Promise</span><span class="punctuation">(</span><span class="punctuation">(</span><span class="mark">resolve</span><span class="punctuation">,</span> <span class="mark">reject</span><span class="punctuation">)</span> <span class="punctuation">=&gt;</span> <span class="punctuation">{</span>
-        fetchAsync<span class="punctuation">(</span>url<span class="punctuation">,</span> timeout<span class="punctuation">,</span> <span class="mark">resolve</span><span class="punctuation">,</span> <span class="mark">reject</span><span class="punctuation">)</span><span class="semi">;</span>
-    <span class="punctuation">}</span><span class="punctuation">)</span><span class="semi">;</span>
-<span class="punctuation">}</span>
-<span class="mark">Promise<span class="punctuation">.</span>all</span><span class="punctuation">(</span><span class="punctuation">[</span>
-    fetchPromised<span class="punctuation">(</span><span class="literal">"http://backend/foo<span class="punctuation">.</span>txt"</span><span class="punctuation">,</span> <span class="literal">500</span><span class="punctuation">)</span><span class="punctuation">,</span>
-    fetchPromised<span class="punctuation">(</span><span class="literal">"http://backend/bar<span class="punctuation">.</span>txt"</span><span class="punctuation">,</span> <span class="literal">500</span><span class="punctuation">)</span><span class="punctuation">,</span>
-    fetchPromised<span class="punctuation">(</span><span class="literal">"http://backend/baz<span class="punctuation">.</span>txt"</span><span class="punctuation">,</span> <span class="literal">500</span><span class="punctuation">)</span>
-<span class="punctuation">]</span><span class="punctuation">)</span><span class="punctuation">.</span><span class="mark">then</span><span class="punctuation">(</span><span class="punctuation">(</span>data<span class="punctuation">)</span> <span class="punctuation">=&gt;</span> <span class="punctuation">{</span>
-    <span class="keyword">let</span> <span class="punctuation">[</span> foo<span class="punctuation">,</span> bar<span class="punctuation">,</span> baz <span class="punctuation">]</span><span class="punctuation"> = </span>data<span class="semi">;</span>
-    console<span class="punctuation">.</span>log<span class="punctuation">(</span><span class="literal">`success: foo=$<span class="punctuation">{</span>foo<span class="punctuation">}</span> bar=$<span class="punctuation">{</span>bar<span class="punctuation">}</span> baz=$<span class="punctuation">{</span>baz<span class="punctuation">}</span>`</span><span class="punctuation">)</span><span class="semi">;</span>
-<span class="punctuation">}</span><span class="punctuation">,</span> <span class="punctuation">(</span>err<span class="punctuation">)</span> <span class="punctuation">=&gt;</span> <span class="punctuation">{</span>
-    console<span class="punctuation">.</span>log<span class="punctuation">(</span><span class="literal">`error: $<span class="punctuation">{</span>err<span class="punctuation">}</span>`</span><span class="punctuation">)</span><span class="semi">;</span>
-<span class="punctuation">}</span><span class="punctuation">)</span><span class="semi">;</span>
-</div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-check-circle"></i>
-</div>
-    <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code"><span class="keyword">function</span> fetchAsync <span class="punctuation">(</span>url<span class="punctuation">,</span> timeout<span class="punctuation">,</span> onData<span class="punctuation">,</span> onError<span class="punctuation">)</span> <span class="punctuation">{</span>
-    <span class="ellipsis">&hellip;</span>
-<span class="punctuation">}</span>
-<span class="keyword">function</span> <span class="mark">fetchAll</span> <span class="punctuation">(</span>request<span class="punctuation">,</span> onData<span class="punctuation">,</span> onError<span class="punctuation">)</span> <span class="punctuation">{</span>
-    <span class="keyword">var</span> result<span class="punctuation"> = </span><span class="punctuation">[</span><span class="punctuation">]</span><span class="punctuation">,</span> results<span class="punctuation"> = </span><span class="literal">0</span><span class="semi">;</span>
-    <span class="keyword">for</span> <span class="punctuation">(</span><span class="keyword">var</span> i<span class="punctuation"> = </span><span class="literal">0</span><span class="punctuation">;</span> i <span class="punctuation">&lt;</span> request<span class="punctuation">.</span>length<span class="punctuation">;</span> i<span class="punctuation">+</span><span class="punctuation">+</span><span class="punctuation">)</span> <span class="punctuation">{</span>
-        result<span class="punctuation">[</span>i<span class="punctuation">]</span><span class="punctuation"> = </span>null<span class="semi">;</span>
-        <span class="punctuation">(</span><span class="keyword">function</span> <span class="punctuation">(</span>i<span class="punctuation">)</span> <span class="punctuation">{</span>
-            fetchAsync<span class="punctuation">(</span>request<span class="punctuation">[</span>i<span class="punctuation">]</span><span class="punctuation">.</span>url<span class="punctuation">,</span> request<span class="punctuation">[</span>i<span class="punctuation">]</span><span class="punctuation">.</span>timeout<span class="punctuation">,</span> <span class="keyword">function</span> <span class="punctuation">(</span>data<span class="punctuation">)</span> <span class="punctuation">{</span>
-                <span class="mark">result<span class="punctuation">[</span>i<span class="punctuation">]</span><span class="punctuation"> = </span>data</span><span class="semi">;</span>
-                <span class="mark"><span class="keyword">if</span> <span class="punctuation">(</span><span class="punctuation">+</span><span class="punctuation">+</span>results <span class="punctuation">===</span> request<span class="punctuation">.</span>length<span class="punctuation">)</span></span>
-                    <span class="mark">onData<span class="punctuation">(</span>result<span class="punctuation">)</span></span><span class="semi">;</span>
-            <span class="punctuation">}</span><span class="punctuation">,</span> onError<span class="punctuation">)</span><span class="semi">;</span>
-        <span class="punctuation">}</span><span class="punctuation">)</span><span class="punctuation">(</span>i<span class="punctuation">)</span><span class="semi">;</span>
-    <span class="punctuation">}</span>
-<span class="punctuation">}</span>
-<span class="mark">fetchAll</span><span class="punctuation">(</span><span class="punctuation">[</span>
-    <span class="punctuation">{</span> url: <span class="literal">"http://backend/foo<span class="punctuation">.</span>txt"</span><span class="punctuation">,</span> timeout: <span class="literal">500</span> <span class="punctuation">}</span><span class="punctuation">,</span>
-    <span class="punctuation">{</span> url: <span class="literal">"http://backend/bar<span class="punctuation">.</span>txt"</span><span class="punctuation">,</span> timeout: <span class="literal">500</span> <span class="punctuation">}</span><span class="punctuation">,</span>
-    <span class="punctuation">{</span> url: <span class="literal">"http://backend/baz<span class="punctuation">.</span>txt"</span><span class="punctuation">,</span> timeout: <span class="literal">500</span> <span class="punctuation">}</span>
-<span class="punctuation">]</span><span class="punctuation">,</span> <span class="keyword">function</span> <span class="punctuation">(</span>data<span class="punctuation">)</span> <span class="punctuation">{</span>
-    <span class="keyword">var</span> foo<span class="punctuation"> = </span>data<span class="punctuation">[</span><span class="literal">0</span><span class="punctuation">]</span><span class="punctuation">,</span> bar<span class="punctuation"> = </span>data<span class="punctuation">[</span><span class="literal">1</span><span class="punctuation">]</span><span class="punctuation">,</span> baz<span class="punctuation"> = </span>data<span class="punctuation">[</span><span class="literal">2</span><span class="punctuation">]</span><span class="semi">;</span>
-    console<span class="punctuation">.</span>log<span class="punctuation">(</span><span class="literal">"success: foo="</span> <span class="punctuation">+</span> foo <span class="punctuation">+</span> <span class="literal">" bar="</span> <span class="punctuation">+</span> bar <span class="punctuation">+</span> <span class="literal">" baz="</span> <span class="punctuation">+</span> baz<span class="punctuation">)</span><span class="semi">;</span>
-<span class="punctuation">}</span><span class="punctuation">,</span> <span class="keyword">function</span> <span class="punctuation">(</span>err<span class="punctuation">)</span> <span class="punctuation">{</span>
-    console<span class="punctuation">.</span>log<span class="punctuation">(</span><span class="literal">"error: "</span> <span class="punctuation">+</span> err<span class="punctuation">)</span><span class="semi">;</span>
-<span class="punctuation">}</span><span class="punctuation">)</span><span class="semi">;</span></div>
     <i class="icon fa fa-circle"></i>
     <i class="icon fa fa-times-circle"></i>
 </div>
@@ -2080,103 +1389,15 @@ Object<span class="punctuation">.</span>defineProperty<span class="punctuation">
     <i class="icon fa fa-times-circle"></i>
 </div>
 </div>
-<div id="Collation" class="showcase showcase_Collation">    <div class="title">Internationalization & Localization</div>
-    <div class="subtitle">Collation</div>
-    <div class="desc">Sorting a set of strings and searching within a set of strings.
-Collation is parameterized by locale and aware of Unicode.</div>
-<div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code"><span class="comment">// <span class="keyword">in</span> German<span class="punctuation">,</span>  <span class="literal">"ä"</span> sorts with <span class="literal">"a"</span></span><span class="comment">
-// <span class="keyword">in</span> Swedish<span class="punctuation">,</span> <span class="literal">"ä"</span> sorts after <span class="literal">"z"</span></span>
-<span class="keyword">var</span> list<span class="punctuation"> = </span><span class="punctuation">[</span> <span class="mark"><span class="literal">"ä"</span></span><span class="punctuation">,</span> <span class="literal">"a"</span><span class="punctuation">,</span> <span class="literal">"z"</span> <span class="punctuation">]</span><span class="semi">;</span>
-<span class="keyword">var</span> l<span class="literal">10</span>nDE<span class="punctuation"> = </span><span class="keyword">new</span> Intl<span class="punctuation">.</span>Collator<span class="punctuation">(</span><span class="mark"><span class="literal">"de"</span></span><span class="punctuation">)</span><span class="semi">;</span>
-<span class="keyword">var</span> l<span class="literal">10</span>nSV<span class="punctuation"> = </span><span class="keyword">new</span> Intl<span class="punctuation">.</span>Collator<span class="punctuation">(</span><span class="mark"><span class="literal">"sv"</span></span><span class="punctuation">)</span><span class="semi">;</span>
-l<span class="literal">10</span>nDE<span class="punctuation">.</span>compare<span class="punctuation">(</span><span class="literal">"ä"</span><span class="punctuation">,</span> <span class="literal">"z"</span><span class="punctuation">)</span> <span class="punctuation">===</span> <span class="mark"><span class="punctuation">-</span><span class="literal">1</span></span><span class="semi">;</span>
-l<span class="literal">10</span>nSV<span class="punctuation">.</span>compare<span class="punctuation">(</span><span class="literal">"ä"</span><span class="punctuation">,</span> <span class="literal">"z"</span><span class="punctuation">)</span> <span class="punctuation">===</span> <span class="mark"><span class="punctuation">+</span><span class="literal">1</span></span><span class="semi">;</span>
-console<span class="punctuation">.</span>log<span class="punctuation">(</span>list<span class="punctuation">.</span>sort<span class="punctuation">(</span>l<span class="literal">10</span>nDE<span class="punctuation">.</span>compare<span class="punctuation">)</span><span class="punctuation">)</span><span class="semi">;</span><span class="comment"> // <span class="punctuation">[</span> <span class="literal">"a"</span><span class="punctuation">,</span> <span class="mark"><span class="literal">"ä"</span></span><span class="punctuation">,</span> <span class="literal">"z"</span> <span class="punctuation">]</span></span>
-console<span class="punctuation">.</span>log<span class="punctuation">(</span>list<span class="punctuation">.</span>sort<span class="punctuation">(</span>l<span class="literal">10</span>nSV<span class="punctuation">.</span>compare<span class="punctuation">)</span><span class="punctuation">)</span><span class="semi">;</span><span class="comment"> // <span class="punctuation">[</span> <span class="literal">"a"</span><span class="punctuation">,</span> <span class="literal">"z"</span><span class="punctuation">,</span> <span class="mark"><span class="literal">"ä"</span></span> <span class="punctuation">]</span></span>
-</div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-check-circle"></i>
-</div>
-    <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code"><span class="comment">// no equivalent <span class="keyword">in</span> ES<span class="literal">5</span></span></div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-times-circle"></i>
-</div>
-</div>
-<div id="NumberFormatting" class="showcase showcase_NumberFormatting">    <div class="title">Internationalization & Localization</div>
-    <div class="subtitle">Number Formatting</div>
-    <div class="desc">Format numbers with digit grouping and localized separators.</div>
-<div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code"><span class="keyword">var</span> l<span class="literal">10</span>nEN<span class="punctuation"> = </span><span class="keyword">new</span> Intl<span class="punctuation">.</span>NumberFormat<span class="punctuation">(</span><span class="mark"><span class="literal">"en<span class="punctuation">-</span>US"</span></span><span class="punctuation">)</span><span class="semi">;</span>
-<span class="keyword">var</span> l<span class="literal">10</span>nDE<span class="punctuation"> = </span><span class="keyword">new</span> Intl<span class="punctuation">.</span>NumberFormat<span class="punctuation">(</span><span class="mark"><span class="literal">"de<span class="punctuation">-</span>DE"</span></span><span class="punctuation">)</span><span class="semi">;</span>
-l<span class="literal">10</span>nEN<span class="punctuation">.</span>format<span class="punctuation">(</span><span class="literal">1234567</span><span class="punctuation">.</span><span class="literal">89</span><span class="punctuation">)</span> <span class="punctuation">===</span> <span class="mark"><span class="literal">"1<span class="punctuation">,</span>234<span class="punctuation">,</span>567<span class="punctuation">.</span>89"</span></span><span class="semi">;</span>
-l<span class="literal">10</span>nDE<span class="punctuation">.</span>format<span class="punctuation">(</span><span class="literal">1234567</span><span class="punctuation">.</span><span class="literal">89</span><span class="punctuation">)</span> <span class="punctuation">===</span> <span class="mark"><span class="literal">"1<span class="punctuation">.</span>234<span class="punctuation">.</span>567<span class="punctuation">,</span>89"</span></span><span class="semi">;</span>
-</div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-check-circle"></i>
-</div>
-    <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code"><span class="comment">// no equivalent <span class="keyword">in</span> ES<span class="literal">5</span></span></div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-times-circle"></i>
-</div>
-</div>
-<div id="CurrencyFormatting" class="showcase showcase_CurrencyFormatting">    <div class="title">Internationalization & Localization</div>
-    <div class="subtitle">Currency Formatting</div>
-    <div class="desc">Format numbers with digit grouping, localized separators and attached currency symbol.</div>
-<div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code"><span class="keyword">var</span> l<span class="literal">10</span>nUSD<span class="punctuation"> = </span><span class="keyword">new</span> Intl<span class="punctuation">.</span>NumberFormat<span class="punctuation">(</span><span class="literal">"en<span class="punctuation">-</span>US"</span><span class="punctuation">,</span> <span class="punctuation">{</span> style: <span class="literal">"currency"</span><span class="punctuation">,</span> currency: <span class="mark"><span class="literal">"USD"</span></span> <span class="punctuation">}</span><span class="punctuation">)</span><span class="semi">;</span>
-<span class="keyword">var</span> l<span class="literal">10</span>nGBP<span class="punctuation"> = </span><span class="keyword">new</span> Intl<span class="punctuation">.</span>NumberFormat<span class="punctuation">(</span><span class="literal">"en<span class="punctuation">-</span>GB"</span><span class="punctuation">,</span> <span class="punctuation">{</span> style: <span class="literal">"currency"</span><span class="punctuation">,</span> currency: <span class="mark"><span class="literal">"GBP"</span></span> <span class="punctuation">}</span><span class="punctuation">)</span><span class="semi">;</span>
-<span class="keyword">var</span> l<span class="literal">10</span>nEUR<span class="punctuation"> = </span><span class="keyword">new</span> Intl<span class="punctuation">.</span>NumberFormat<span class="punctuation">(</span><span class="literal">"de<span class="punctuation">-</span>DE"</span><span class="punctuation">,</span> <span class="punctuation">{</span> style: <span class="literal">"currency"</span><span class="punctuation">,</span> currency: <span class="mark"><span class="literal">"EUR"</span></span> <span class="punctuation">}</span><span class="punctuation">)</span><span class="semi">;</span>
-l<span class="literal">10</span>nUSD<span class="punctuation">.</span>format<span class="punctuation">(</span><span class="literal">100200300</span><span class="punctuation">.</span><span class="literal">40</span><span class="punctuation">)</span> <span class="punctuation">===</span> <span class="mark"><span class="literal">"$100<span class="punctuation">,</span>200<span class="punctuation">,</span>300<span class="punctuation">.</span>40"</span></span><span class="semi">;</span>
-l<span class="literal">10</span>nGBP<span class="punctuation">.</span>format<span class="punctuation">(</span><span class="literal">100200300</span><span class="punctuation">.</span><span class="literal">40</span><span class="punctuation">)</span> <span class="punctuation">===</span> <span class="mark"><span class="literal">"£100<span class="punctuation">,</span>200<span class="punctuation">,</span>300<span class="punctuation">.</span>40"</span></span><span class="semi">;</span>
-l<span class="literal">10</span>nEUR<span class="punctuation">.</span>format<span class="punctuation">(</span><span class="literal">100200300</span><span class="punctuation">.</span><span class="literal">40</span><span class="punctuation">)</span> <span class="punctuation">===</span> <span class="mark"><span class="literal">"100<span class="punctuation">.</span>200<span class="punctuation">.</span>300<span class="punctuation">,</span>40 €"</span></span><span class="semi">;</span>
-</div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-check-circle"></i>
-</div>
-    <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code"><span class="comment">// no equivalent <span class="keyword">in</span> ES<span class="literal">5</span></span></div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-times-circle"></i>
-</div>
-</div>
-<div id="DateTimeFormatting" class="showcase showcase_DateTimeFormatting">    <div class="title">Internationalization & Localization</div>
-    <div class="subtitle">Date/Time Formatting</div>
-    <div class="desc">Format date/time with localized ordering and separators.</div>
-<div class="js es6">
-    <div class="title"><b>ECMAScript 6</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code"><span class="keyword">var</span> l<span class="literal">10</span>nEN<span class="punctuation"> = </span><span class="keyword">new</span> Intl<span class="punctuation">.</span>DateTimeFormat<span class="punctuation">(</span><span class="mark"><span class="literal">"en<span class="punctuation">-</span>US"</span></span><span class="punctuation">)</span><span class="semi">;</span>
-<span class="keyword">var</span> l<span class="literal">10</span>nDE<span class="punctuation"> = </span><span class="keyword">new</span> Intl<span class="punctuation">.</span>DateTimeFormat<span class="punctuation">(</span><span class="mark"><span class="literal">"de<span class="punctuation">-</span>DE"</span></span><span class="punctuation">)</span><span class="semi">;</span>
-l<span class="literal">10</span>nEN<span class="punctuation">.</span>format<span class="punctuation">(</span><span class="keyword">new</span> Date<span class="punctuation">(</span><span class="literal">"2015<span class="punctuation">-</span>01<span class="punctuation">-</span>02"</span><span class="punctuation">)</span><span class="punctuation">)</span> <span class="punctuation">===</span> <span class="mark"><span class="literal">"1/2/2015"</span></span><span class="semi">;</span>
-l<span class="literal">10</span>nDE<span class="punctuation">.</span>format<span class="punctuation">(</span><span class="keyword">new</span> Date<span class="punctuation">(</span><span class="literal">"2015<span class="punctuation">-</span>01<span class="punctuation">-</span>02"</span><span class="punctuation">)</span><span class="punctuation">)</span> <span class="punctuation">===</span> <span class="mark"><span class="literal">"2<span class="punctuation">.</span>1<span class="punctuation">.</span>2015"</span></span><span class="semi">;</span>
-</div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-check-circle"></i>
-</div>
-    <div class="arrow"><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></div><div class="js es5">
-    <div class="title"><b>ECMAScript 5</b> &mdash; syntactic sugar: <span class="style reduced">reduced</span> | <span class="style traditional">traditional</span></div>
-    <div class="code"><span class="comment">// no equivalent <span class="keyword">in</span> ES<span class="literal">5</span></span></div>
-    <i class="icon fa fa-circle"></i>
-    <i class="icon fa fa-times-circle"></i>
-</div>
-</div>
 
             <!-- ATTENTION: END OF GENERATED CODE. DO NOT EDIT MANUALLY -->
         </div>
-        <div class="foot">
+        <!-- <div class="foot">
             <div class="text">
                 Copyright &copy; 2015-2016 <a href="http://engelschall.com/">Ralf S. Engelschall</a> &nbsp; <i class="fa fa-twitter-square"></i> <a href="http://twitter.com/engelschall">@engelschall</a><br/>
                 Fully generated from a <a href="https://github.com/rse/es6-features/blob/gh-pages/features.txt">single source</a><br/>
                 Licensed under <a href="https://github.com/rse/es6-features/blob/gh-pages/LICENSE.txt">MIT License</a>.
             </div>
-        </div>
+        </div> -->
     </body>
 </html>

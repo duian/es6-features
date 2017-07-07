@@ -187,16 +187,22 @@ code {
     color: #e0e0e0;
     font-weight: bold;
     padding-left: 10px;
+    padding-bottom: 10px;
+    // padding-top: 10px;
     width: 100%;
 }
+.nav > ul > li:first-child {
+    padding-top: 10px;
+}
+
 .nav > ul > li > ul {
     position: relative;
     left: -10px;
     background-color: red;
     list-style-type: none;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-left: 0px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding-left: 0;
     width: 100%;
 }
 .nav > ul > li > ul > li {
@@ -209,7 +215,8 @@ code {
 .nav > ul > li > ul > li a {
     text-decoration: none;
     color: #e0e0e0;
-    padding-left: 30px;
+    // padding-left: 30px;
+    padding: 5px 0 5px 30px;
     width: 100%;
     display: inline-block;
 }
